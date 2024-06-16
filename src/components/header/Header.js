@@ -11,8 +11,8 @@ function Header(){
                     <li><a className="header__link header__navlink" href="#">Comment ça marche ?</a></li>
                     <li><a className="header__link header__navlink" href="#">Pourquoi nous choisir</a></li>
                 </ul>
+                <a className="header__link header__contact" href="#">Contact</a>
             </nav>
-            <a class="header__link header__contact" href="#">Contact</a>
         </header>
     )
 }
