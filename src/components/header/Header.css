@@ -51,6 +51,12 @@ header nav ul {
     padding: 10px 24px;
 }
 
+@media screen and (max-width: 1024px) {
+    header nav ul {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1350px) {
     header {
         padding-left: 5%;
