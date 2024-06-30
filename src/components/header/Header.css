@@ -42,15 +42,6 @@ header nav ul {
     transition: 0.2s;
 }
 
-.header__contact {
-    background: #545A92;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #F5FAFB;
-    padding: 10px 24px;
-}
-
 @media screen and (max-width: 1024px) {
     header nav ul {
         display: none;
