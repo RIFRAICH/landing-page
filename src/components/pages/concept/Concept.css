@@ -1,0 +1,98 @@
+.concept {
+    background-color: #F5FAFB;
+    padding-top: 100px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.concept__title {
+    font-family: Montserrat;
+    font-size: 57px;
+    font-weight: 600;
+}
+
+.concept__description {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 24px;
+    line-height: 32px;
+}
+
+.concept__presimg{
+    max-width: 100%;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+
+.concept__abouttitle {
+    margin-top: 70px;
+    font-family: Montserrat;
+    font-size: 57px;
+    font-weight: 400;
+}
+
+.concept__about {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.concept__aboutimg {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.concept__aboutcards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.concept__aboutcard {
+    background-color: #DFE0FF;
+    border-radius: 8px;
+    padding: 28px 20px;
+}
+
+.concept__aboutcardnumber {
+    font-family: Montserrat;
+    font-size: 57px;
+    font-weight: 600;
+}
+
+.concept__aboutcardtitle {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.concept__aboutcarddescription {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 22px
+}
+
+@media screen and (max-width: 1024px) {
+    .concept__about {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .concept {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .concept__title, .concept__abouttitle, .concept__aboutcardnumber {
+        font-size: 40px;
+    }
+    .concept__description {
+        font-size: 18px;
+    }
+}
