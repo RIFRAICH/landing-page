@@ -77,10 +77,62 @@
     line-height: 22px
 }
 
+.concept__concepttitle {
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 70px;
+}
+
+.concept__conceptcards {
+    display: flex;
+    margin-top: 24px;
+    gap: 40px;
+}
+
+.concept__conceptcard {
+    background-color: #00696D;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 28px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.concept__conceptcardheader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.concept__conceptcardtitle {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.concept__conceptcarddescription {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.concept__conceptimg {
+    max-width: 100%;
+    height: 10%;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 1024px) {
     .concept__about {
         flex-direction: column;
         align-items: center;
+    }
+    .concept__aboutimg {
+        max-width: 100%;
     }
 }
 
@@ -91,6 +143,9 @@
     }
     .concept__title, .concept__abouttitle, .concept__aboutcardnumber {
         font-size: 40px;
+    }
+    .concept__concepttitle {
+        font-size: 35px;
     }
     .concept__description {
         font-size: 18px;

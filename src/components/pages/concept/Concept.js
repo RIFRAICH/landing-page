@@ -1,6 +1,8 @@
 import './Concept.css'
 import pres from '../../../assets/img/pres.jpeg'
 import about from '../../../assets/img/about.jpeg'
+import concept from '../../../assets/img/concept.jpeg'
+import {UilFileCheckAlt, UilHeadphones, UilStar} from "@iconscout/react-unicons";
 
 function Concept(){
     return (
@@ -47,6 +49,41 @@ function Concept(){
                     </section>
                     <img src={about} alt="A propos de nous" className="concept__aboutimg"/>
                 </section>
+            </section>
+            <section>
+                <h2 className="concept__concepttitle">Le concept de RIFRAICH repose sur trois piliers fondamentaux :</h2>
+                <section className="concept__conceptcards">
+                    <section className="concept__conceptcard">
+                        <section className="concept__conceptcardheader">
+                            <UilStar/>
+                            <h3 className="concept__conceptcardtitle">Sélection rigoureuse</h3>
+                        </section>
+                        <p className="concept__conceptcarddescription">Nous ne proposons que des vêtements d'occasion en
+                            excellent état, soigneusement sélectionnés pour leur qualité, leur style et leur
+                            intemporalité.</p>
+                    </section>
+                    <section className="concept__conceptcard">
+                        <section className="concept__conceptcardheader">
+                            <UilFileCheckAlt/>
+                            <h3 className="concept__conceptcardtitle">Reconditionnement méticuleux</h3>
+                        </section>
+                        <p className="concept__conceptcarddescription">Chaque vêtement est soigneusement inspecté et
+                            reconditionné pour répondre à nos normes de qualité élevées. Nous nous assurons ainsi que tu
+                            reçois des pièces impeccables, prêtes à être portées et aimées pendant de nombreuses
+                            années.</p>
+                    </section>
+                    <section className="concept__conceptcard">
+                        <section className="concept__conceptcardheader">
+                            <UilHeadphones/>
+                            <h3 className="concept__conceptcardtitle">Service client irréprochable</h3>
+                        </section>
+                        <p className="concept__conceptcarddescription">Nous sommes passionnés par la mode durable et
+                            nous nous engageons à offrir à nos clients une expérience d'achat exceptionnelle. Notre
+                            équipe est toujours disponible pour te conseiller et t’aider à trouver les pièces qui te
+                            correspondent.</p>
+                    </section>
+                </section>
+                <img src={concept} alt="Notre concept" className="concept__conceptimg"/>
             </section>
         </main>
     )
