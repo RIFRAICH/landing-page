@@ -13,10 +13,10 @@ function Footer() {
                 </ul>
                 <ul>
                     <li className="footer__text"><a className="footer__link" href="https://blog.rifraich.fr"
-                                                    target="_blank">Blog</a>
+                                                    target="_blank" rel="noreferrer">Blog</a>
                     </li>
                     <li className="footer__text"><a className="footer__link" href="https://status.rifraich.fr"
-                                                    target="_blank">État des
+                                                    target="_blank" rel="noreferrer">État des
                         services</a>
                     </li>
                 </ul>
