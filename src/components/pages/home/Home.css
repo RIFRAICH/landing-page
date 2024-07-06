@@ -1,7 +1,7 @@
 .home {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-left: 180px;
-    padding-bottom: 160px;
+    padding-bottom: 140px;
 }
 
 .home__text {
@@ -17,13 +17,13 @@
     font-size: 57px;
     font-weight: 600;
     color: #00696D;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 50%;
 }
 
 .home__description {
     margin-top: 50px;
-    margin-bottom: 170px;
+    margin-bottom: 150px;
 }
 
 @media screen and (max-width: 768px) {
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 1024px) {
     .home__description {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 }
 
