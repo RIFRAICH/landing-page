@@ -20,6 +20,7 @@ footer {
     color: #FFF;
     font-weight: 400;
     margin-top: 10px;
+    line-height: normal;
 }
 
 .footer__link {
@@ -38,6 +39,12 @@ footer {
     margin-left: 0;
 }
 
+@media screen and (max-width: 564px) {
+    footer {
+        padding: 120px 60px;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .footer__sections {
         flex-direction: column;
@@ -46,6 +53,7 @@ footer {
     }
     footer {
         text-align: center;
+        padding: 120px 80px;
     }
     .footer__spacer {
         width: 90%;
