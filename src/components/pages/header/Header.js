@@ -10,7 +10,7 @@ function Header(){
                 <ul>
                     <li><a className="header__link header__navlink" href="#concept">Notre concept</a></li>
                     <li><a className="header__link header__navlink" href="#index">Comment ça marche ?</a></li>
-                    <li><a className="header__link header__navlink" href="#index">Pourquoi nous choisir</a></li>
+                    <li><a className="header__link header__navlink" href="#why">Pourquoi nous choisir</a></li>
                 </ul>
                 <BlueButton link="#" label="Contact" />
             </nav>
