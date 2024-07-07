@@ -7,8 +7,12 @@ if(!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['subject']
 $name = strip_tags($_POST['name']);
 $email = strip_tags($_POST['email']);
 $subject = strip_tags($_POST['subject']);
-$phone = isset($_POST['phone']) ? strip_tags($_POST['phone']) : '';
+$phone = isset($_POST['phone']) ? strip_tags($_POST['phone']) : '-';
 $message = strip_tags($_POST['message']);
 
-mail("contact@rifraich.fr", "Message via landing page : ". $subject, "Nom : ". $name ."\r\nEmail : ". $email ."\r\nTéléphone : ". $phone ."\r\nObjet : ". $subject ."\r\n \r\n". $message);
+$headers = 'From: RIFRAICH <noreply@rifraich.fr>' . "\r\n" .
+           'Reply-To: '. $email . "\r\n" .
+           'X-Mailer: PHP/' . phpversion();
+
+mail("contact@rifraich.fr", "Message via landing page : ". $subject, "Nom : ". $name ."\r\nEmail : ". $email ."\r\nTelephone : ". $phone ."\r\nObjet : ". $subject ."\r\n \r\n". $message, $headers);
 echo 'true';

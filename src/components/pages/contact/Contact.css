@@ -97,6 +97,16 @@
     border-style: outset;
 }
 
+.contact__formsuccess {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #509406;
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 @media screen and (max-width: 768px) {
     .contact__formsection {
         flex-direction: column;
