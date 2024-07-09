@@ -8,7 +8,7 @@ function Footer() {
                 <img src={logoWhite} alt="Logo RIFRAICH" className="footer__logo"/>
                 <ul>
                     <li className="footer__text"><a className="footer__link" href="#concept">Notre concept</a></li>
-                    <li className="footer__text"><a className="footer__link" href="#index">Comment ça marche ?</a></li>
+                    <li className="footer__text"><a className="footer__link" href="#howtowork">Comment ça marche ?</a></li>
                     <li className="footer__text"><a className="footer__link" href="#why">Pourquoi nous choisir</a></li>
                 </ul>
                 <ul>
