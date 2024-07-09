@@ -48,7 +48,7 @@ function Contact() {
     };
 
     return (
-        <section className="contact">
+        <section id="contact" className="contact">
             <h2 className="contact__title">Contacte-nous !</h2>
             <p className="contact__description">RIFRAICH est à ton écoute. N'hésite pas à nous contacter pour toute question, commentaire ou suggestion.</p>
             <form className="contact__form" onSubmit={handleSubmit}>

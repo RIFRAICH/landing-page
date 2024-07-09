@@ -2,7 +2,7 @@ import './BlueButton.css';
 
 function BlueButton(props) {
     return (
-        <a className="bluebutton" href={props.link}>{props.label}</a>
+        <a className="bluebutton" href={props.link} target="_blank" rel="noreferrer">{props.label}</a>
     )
 }
 

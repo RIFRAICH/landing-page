@@ -18,7 +18,7 @@ function Home(){
                 <p className="home__text">Pièces uniques, marques premium, garanties impeccables.</p>
                 <p className="home__text">Shoppe la mode durable sans compromis sur le style.</p>
             </section>
-            <BlueButton link="#" label="S'inscrire à la newsletter"/>
+            <BlueButton link="https://rifraich.softr.app/newsletter" label="S'inscrire à la newsletter"/>
         </section>
     );
 }
