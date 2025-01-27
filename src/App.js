@@ -1,11 +1,11 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import IndexPage from "./pages/IndexPage";
+import Home from "./pages/Home";
 
 function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<IndexPage />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
   );
