@@ -2,8 +2,12 @@ import React from 'react';
 import styles from '../../styles/components/ScrollingBanner.module.scss';
 import { motion } from 'framer-motion';
 import {StarIcon} from "../../utils/Icons";
+import useIsTablet from "../../hooks/useIsTablet";
 
 const ScrollingBanner = () => {
+
+    const isTablet = useIsTablet();
+
     return (
         <section className={styles.bannerWrapper}>
             {/* Première bannière */}
@@ -13,11 +17,11 @@ const ScrollingBanner = () => {
                     animate={{ x: ['0%', '-100%'] }}
                     transition={{
                         repeat: Infinity,
-                        duration: 80,
+                        duration: isTablet ? 15 : 80,
                         ease: 'linear',
                     }}
                 >
-                    {[...Array(30)].map((_, index) => (
+                    {[...Array(isTablet ? 15 : 30)].map((_, index) => (
                         <React.Fragment key={index}>
                             <span className={styles.text}>RIFRAICH</span>
                             <StarIcon className={styles.icon} />
@@ -35,11 +39,11 @@ const ScrollingBanner = () => {
                     animate={{ x: ['0%', '-100%'] }}
                     transition={{
                         repeat: Infinity,
-                        duration: 80,
+                        duration: isTablet ? 15 : 80,
                         ease: 'linear',
                     }}
                 >
-                    {[...Array(30)].map((_, index) => (
+                    {[...Array(isTablet ? 15 : 30)].map((_, index) => (
                         <React.Fragment key={index}>
                             <span className={styles.text} style={{ color: '#FFF' }}>RIFRAICH</span>
                             <StarIcon className={styles.icon} stroke="#FFF" />
