@@ -3,10 +3,12 @@ import styles from '../../styles/components/ScrollingBanner.module.scss';
 import { motion } from 'framer-motion';
 import {StarIcon} from "../../utils/Icons";
 import useIsTablet from "../../hooks/useIsTablet";
+import useIsMobile from "../../hooks/useIsMobile";
 
 const ScrollingBanner = () => {
 
     const isTablet = useIsTablet();
+    const isMobile = useIsMobile();
 
     return (
         <section className={styles.bannerWrapper}>
@@ -17,7 +19,7 @@ const ScrollingBanner = () => {
                     animate={{ x: ['0%', '-100%'] }}
                     transition={{
                         repeat: Infinity,
-                        duration: isTablet ? 15 : 80,
+                        duration: isTablet ? (isMobile ? 15 : 30) : 60,
                         ease: 'linear',
                     }}
                 >
@@ -39,7 +41,7 @@ const ScrollingBanner = () => {
                     animate={{ x: ['0%', '-100%'] }}
                     transition={{
                         repeat: Infinity,
-                        duration: isTablet ? 15 : 80,
+                        duration: isTablet ? (isMobile ? 20 : 40) : 80,
                         ease: 'linear',
                     }}
                 >

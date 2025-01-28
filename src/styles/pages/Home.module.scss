@@ -1,12 +1,16 @@
 @import "../mixins";
 
 .main {
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.container {
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
-    background-color: #FFF;
     padding-left: 20%;
     padding-right: 20%;
     @include for-tablet-only {
