@@ -12,7 +12,7 @@ function Home(){
                 <section style={{ flex: 1 }} />
                 <p className={styles.mainText}>Encore un instant... On règle les derniers détails (et les ourlets) !</p>
                 <section className={styles.socialsContainer}>
-                    <p className={styles.socialText}>En attendant, tu peux nous suivre sur les réseaux sociaux :</p>
+                    <p className={styles.socialText}>En attendant, tu peux nous suivre sur les réseaux :</p>
                     <section className={styles.socialLinksContainer}>
                         <Link to={SOCIAL_INSTAGRAM_URL} target="_blank"><InstagramIcon size={32}/></Link>
                         <Link to={SOCIAL_FACEBOOK_URL} target="_blank"><FacebookIcon size={32}/></Link>
