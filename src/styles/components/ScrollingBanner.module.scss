@@ -1,3 +1,5 @@
+@import "../mixins";
+
 .bannerWrapper {
     position: relative;
     width: 150vw;
@@ -31,6 +33,9 @@
   gap: 32px;
   padding: 24px 0;
   white-space: nowrap;
+  @include for-tablet-only {
+      padding: 16px 0px;
+  }
 }
 
 .text {
@@ -41,8 +46,15 @@
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.32px;
+    @include for-tablet-only {
+        font-size: 24px;
+    }
 }
 
 .icon {
   flex-shrink: 0;
+  @include for-tablet-only {
+      width: 28px;
+      height: 28px;
+  }
 }
