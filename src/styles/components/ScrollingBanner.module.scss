@@ -1,0 +1,60 @@
+@import "../mixins";
+
+.bannerWrapper {
+    position: relative;
+    width: 150vw;
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(2.222deg);
+  overflow: hidden;
+  width: 150vw;
+  border: 1px solid #000;
+}
+
+.containerBlack {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-6.362deg);
+  overflow: hidden;
+  width: 150vw;
+  background-color: black;
+}
+
+.scrollingContent {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 0;
+  white-space: nowrap;
+  @include for-tablet-only {
+      padding: 16px 0px;
+  }
+}
+
+.text {
+  color: #000;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.32px;
+    @include for-tablet-only {
+        font-size: 24px;
+    }
+}
+
+.icon {
+  flex-shrink: 0;
+  @include for-tablet-only {
+      width: 28px;
+      height: 28px;
+  }
+}
