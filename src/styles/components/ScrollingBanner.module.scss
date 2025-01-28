@@ -1,62 +1,66 @@
 @import "../mixins";
 
 .bannerWrapper {
-    position: relative;
+    position: absolute;
+    top: 3%;
+    left: 0;
     width: 105vw;
-    margin-left: -20%;
-    margin-right: -20%;
-    margin-top: -6%;
+    @include for-tablet-only {
+      top: 5%;
+    }
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%) rotate(2.222deg);
-  overflow: hidden;
-  width: 105vw;
-  border: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%) rotate(2.222deg);
+    overflow: hidden;
+    width: 105vw;
+    border: 1px solid #000;
 }
 
 .containerBlack {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%) rotate(-6.362deg);
-  margin-top: 40px;
-  overflow: hidden;
-  width: 105vw;
-  background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%) rotate(-6.362deg);
+    margin-top: 40px;
+    overflow: hidden;
+    width: 105vw;
+    background-color: black;
 }
 
 .scrollingContent {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  padding: 24px 0;
-  white-space: nowrap;
-  @include for-tablet-only {
-      padding: 16px 0px;
-  }
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 16px 0;
+    white-space: nowrap;
+    @include for-tablet-only {
+        padding: 16px 0px;
+    }
 }
 
 .text {
-  color: #000;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 120%;
-  letter-spacing: 0.32px;
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.32px;
     @include for-tablet-only {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
 .icon {
-  flex-shrink: 0;
-  @include for-tablet-only {
-      width: 28px;
-      height: 28px;
-  }
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    @include for-tablet-only {
+        width: 24px;
+        height: 24px;
+    }
 }

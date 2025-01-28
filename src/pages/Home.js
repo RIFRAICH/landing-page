@@ -7,8 +7,9 @@ import ScrollingBanner from "../components/pures/ScrollingBanner";
 function Home(){
     return (
         <main className={styles.main}>
+            <ScrollingBanner />
             <section className={styles.container}>
-                <ScrollingBanner />
+                <section style={{ flex: 1 }} />
                 <p className={styles.mainText}>Encore un instant... On règle les derniers détails (et les ourlets) !</p>
                 <section className={styles.socialsContainer}>
                     <p className={styles.socialText}>En attendant, tu peux nous suivre sur les réseaux sociaux :</p>

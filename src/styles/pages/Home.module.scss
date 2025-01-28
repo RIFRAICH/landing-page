@@ -27,7 +27,6 @@
     line-height: 120%;
     letter-spacing: 0.56px;
     text-align: center;
-    margin-top: 80px;
     @include for-tablet-only {
         font-size: 28px;
     }
@@ -38,7 +37,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 22px;
+    flex: 1;
 }
 
 .socialText {
