@@ -19,6 +19,7 @@ const Home = () => {
 
       {/* Image au centre */}
       <div className="home__image-container">
+        <div className="home__greeting">BONJOUR</div>
         <img
           src={process.env.PUBLIC_URL + "/assets/img/home_pro.png"}
           alt="Mode Seconde Main"
