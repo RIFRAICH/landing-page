@@ -55,22 +55,13 @@
 }
 
 .home__title {
+  padding-top: 10rem;
   font-size: 4.5rem;
   font-weight: 700;
   color: #000;
   margin: 0;
   line-height: 1.2;
-  width: 100%;
-  max-width: 500px;
-}
-
-.home__subtitle {
-  font-size: 4.5rem;
-  font-weight: 700;
-  color: #1E22AA;
-  margin: 0;
-  line-height: 1.2;
-  width: 100%;
+  width: 150%;
   max-width: 500px;
 }
 
@@ -117,8 +108,8 @@
   grid-column: 3;
   padding-left: 2rem;
   padding-right: 4rem;
-  padding-top: 4rem;
-  width: 100%;
+  padding-top: 10rem;
+  width: 150%;
 }
 
 .home__right-text {
