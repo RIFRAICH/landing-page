@@ -15,12 +15,15 @@ const Home = () => {
           </p>
           <button className="home__cta">Commencer maintenant</button>
         </div>
-        <div className="home__right">
+        <div className="home__center">
           <img
             src={process.env.PUBLIC_URL + "/assets/img/home_pro.png"}
             alt="Mode Seconde Main"
             className="home__image"
           />
+        </div>
+        <div className="home__right">
+          <h2 className="home__right-text">prend un<br />nouveau souffle</h2>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .home::before {
@@ -29,16 +30,18 @@
 .home__content {
   position: relative;
   z-index: 1;
-  display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
 }
 
 .home__left {
-  flex: 1;
-  padding-right: 4rem;
+  padding-right: 2rem;
+  grid-column: 1;
 }
 
 .home__title {
@@ -78,16 +81,26 @@
   font-weight: 600;
 }
 
-.home__right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home__center {
+  grid-column: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .home__image {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 2;
+  max-height: 90vh;
+  width: auto;
+  object-fit: contain;
+}
+
+.home__right {
+  grid-column: 3;
+  padding-left: 2rem;
+}
+
+.home__right-text {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
