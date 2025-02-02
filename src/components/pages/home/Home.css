@@ -33,13 +33,14 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: minmax(300px, 1fr) auto minmax(300px, 1fr);
   align-items: center;
 }
 
 .home__left {
+  padding-left: 4rem;
   padding-right: 2rem;
   grid-column: 1;
 }
@@ -96,6 +97,7 @@
 .home__right {
   grid-column: 3;
   padding-left: 2rem;
+  padding-right: 4rem;
 }
 
 .home__right-text {
