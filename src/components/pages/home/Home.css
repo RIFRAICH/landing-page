@@ -1,8 +1,8 @@
 .home {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow: hidden;
 }
@@ -36,7 +36,8 @@
   padding: 0;
   display: grid;
   grid-template-columns: minmax(300px, 1fr) auto minmax(300px, 1fr);
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 4rem;
 }
 
 .home__left {
@@ -89,9 +90,10 @@
 }
 
 .home__image {
-  max-height: 90vh;
+  max-height: calc(100vh - 4rem);
   width: auto;
   object-fit: contain;
+  margin-bottom: -4px;
 }
 
 .home__right {
