@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: minmax(300px, 1fr) auto minmax(300px, 1fr);
   align-items: flex-start;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .home__left {
@@ -90,10 +90,11 @@
 }
 
 .home__image {
-  max-height: calc(100vh);
+  max-height: calc(110vh);
   width: auto;
   object-fit: contain;
   margin-bottom: -4px;
+  margin-top: -2rem;
 }
 
 .home__right {
