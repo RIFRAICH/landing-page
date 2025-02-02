@@ -90,7 +90,7 @@
 }
 
 .home__image {
-  max-height: calc(100vh - 4rem);
+  max-height: calc(100vh);
   width: auto;
   object-fit: contain;
   margin-bottom: -4px;
