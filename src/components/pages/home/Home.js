@@ -6,8 +6,8 @@ const Home = () => {
     <section className="home">
       <div className="home__content">
         <div className="home__left">
-          <h1 className="home__title">La mode seconde main</h1>
-          <h2 className="home__subtitle">prend un nouveau souffle</h2>
+          <h1 className="home__title">La mode seconde</h1>
+          <h2 className="home__subtitle">main</h2>
           <p className="home__description">
             Simplifiez la gestion de votre boutique<br />
             en ligne et concentrez-vous sur ce que<br />
