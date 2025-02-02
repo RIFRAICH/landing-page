@@ -6,14 +6,18 @@ const Home = () => {
     <section className="home">
       <div className="home__content">
         <div className="home__left">
-          <h1 className="home__title">La mode seconde</h1>
-          <h2 className="home__subtitle">main</h2>
-          <p className="home__description">
-            Simplifiez la gestion de votre boutique<br />
-            en ligne et concentrez-vous sur ce que<br />
-            vous aimez : la mode.
-          </p>
-          <button className="home__cta">Commencer maintenant</button>
+          <div>
+            <h1 className="home__title">La mode</h1>
+            <h2 className="home__subtitle">seconde main</h2>
+          </div>
+          <div>
+            <p className="home__description">
+              Simplifiez la gestion de votre boutique<br />
+              en ligne et concentrez-vous sur ce que<br />
+              vous aimez : la mode.
+            </p>
+            <button className="home__cta">Commencer maintenant</button>
+          </div>
         </div>
         <div className="home__center">
           <img
