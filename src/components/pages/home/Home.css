@@ -99,7 +99,7 @@
   width: auto;
   object-fit: cover;
   margin: 0;
-  transform: translateY(5%);
+  transform: translateY(-30%);
 }
 
 .home__right {
