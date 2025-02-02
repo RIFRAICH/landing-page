@@ -1,9 +1,10 @@
 .banner-container {
   position: relative;
-  width: 103vw; /* Assurez-vous que la bande occupe toute la largeur de l'écran */
+  width: 103vw;
   overflow: hidden;
-  height: 4vw; /* Ajustez la hauteur de la bande selon vos besoins */
-  margin-left: -4.5vw; /* Ajustez les marges pour donner l'impression que la bande commence à gauche de la fenêtre */
+  height: 4vw;
+  margin-left: -4.5vw;
+  z-index: 1000;
 }
 
 .banner-content {
