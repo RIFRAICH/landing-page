@@ -87,14 +87,17 @@
   grid-column: 2;
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem);
 }
 
 .home__image {
-  max-height: calc(150vh);
+  height: 95%;
   width: auto;
   object-fit: contain;
-  margin-bottom: -4px;
-  margin-top: -2rem;
+  margin: auto;
 }
 
 .home__right {
