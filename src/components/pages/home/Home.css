@@ -51,22 +51,27 @@
   height: 100%;
   padding-top: 4rem;
   padding-bottom: 8rem;
+  width: 100%;
 }
 
 .home__title {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #000;
   margin: 0;
   line-height: 1.2;
+  width: 100%;
+  max-width: 500px;
 }
 
 .home__subtitle {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #1E22AA;
-  margin: 0.5rem 0 2rem;
+  margin: 0;
   line-height: 1.2;
+  width: 100%;
+  max-width: 500px;
 }
 
 .home__description {
@@ -113,11 +118,14 @@
   padding-left: 2rem;
   padding-right: 4rem;
   padding-top: 4rem;
+  width: 100%;
 }
 
 .home__right-text {
   color: white;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.2;
+  width: 100%;
+  max-width: 500px;
 }
