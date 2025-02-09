@@ -7,8 +7,7 @@ const Home = () => {
       <div className="home__content">
         <div className="home__left">
           <div>
-            <h1 className="home__title">La mode</h1>
-            <h2 className="home__subtitle">seconde main</h2>
+            <h1 className="home__title">La mode seconde main</h1>
           </div>
           <div>
             <p className="home__description">
