@@ -1,0 +1,93 @@
+.engagement {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.engagement__title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.engagement__subtitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    color: #000;
+}
+
+.engagement__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.engagement__card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1F2BA6;
+    border-radius: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.engagement__content {
+    flex: 1;
+    padding: 3rem;
+    z-index: 1;
+}
+
+.engagement__content h4 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.engagement__content p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.engagement__image {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 968px) {
+    .engagement__card {
+        flex-direction: column;
+    }
+
+    .engagement__image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .engagement__content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .engagement__title {
+        font-size: 1.25rem;
+    }
+
+    .engagement__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .engagement__content h4 {
+        font-size: 1.5rem;
+    }
+}
