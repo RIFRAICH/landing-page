@@ -56,12 +56,12 @@
 
 .home__title {
   padding-top: 2rem;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #000;
   margin: 0;
   line-height: 1.2;
-  width: 100%;
+  width: 150%;
 }
 
 .home__description {
@@ -106,15 +106,14 @@
 
 .home__right {
   grid-column: 3;
-  padding-left: 2rem;
   padding-right: 4rem;
   padding-top: 6rem;
-  width: 100%;
+  width: 150%;
 }
 
 .home__right-text {
   color: white;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
   width: 100%;
