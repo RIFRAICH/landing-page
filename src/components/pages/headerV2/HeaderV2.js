@@ -56,19 +56,25 @@ function HeaderV2(){
     return(
         <header className="header" id="header">
             <nav className="nav container">
-                <div className="nav__maininfos">
-                    <a className="nav__logo" href="#index"><img className="header__logoimg" src={Logo}
-                                                                   alt="Logo RIFRAICH"/></a>
-                </div>
-
-                <div className="nav__menu" id="nav-menu">
+                <div className="nav__left">
                     <ul className="nav__list">
                         <li className="nav__item"><a href="#" className="nav__link">A propos de nous</a></li>
                         <li className="nav__item"><a href="#" className="nav__link">Nos engagements</a></li>
-                        <li className="nav__item"><a href="#" className="nav__link">Pourquoi nous choisir</a></li>
                     </ul>
                 </div>
-                <button className="nav__contact">Contactez-nous</button>
+
+                <div className="nav__center">
+                    <a className="nav__logo" href="#index">
+                        <img className="header__logoimg" src={Logo} alt="Logo RIFRAICH"/>
+                    </a>
+                </div>
+
+                <div className="nav__right">
+                    <ul className="nav__list">
+                        <li className="nav__item"><a href="#" className="nav__link">Pourquoi nous choisir</a></li>
+                    </ul>
+                    <button className="nav__contact">Contactez-nous</button>
+                </div>
 
                 <div className="nav__btns">
                     <div className="nav__toggle" id="nav-toggle">
