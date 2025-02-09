@@ -65,7 +65,7 @@ function HeaderV2(){
 
                 <div className="nav__center">
                     <a className="nav__logo" href="#index">
-                        <img className="header__logoimg" src={Logo} alt="Logo RIFRAICH"/>
+                        <span className="header__logotext">R I F R A I C H</span>
                     </a>
                 </div>
 
