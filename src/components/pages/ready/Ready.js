@@ -5,9 +5,12 @@ function Ready() {
     return (
         <section className="ready">
             <div className="ready__content">
-                <h2>Prêt à nous rejoindre ?</h2>
-                <p>Découvrez notre sélection de vêtements de seconde main.</p>
-                <button className="ready__button">Commencer l'aventure</button>
+                <h2>Prêt à révolutionner votre manière<br />de vendre des vêtements<br />d'occasion ?</h2>
+                <p>Rejoignez une communauté de fripiers passionnés et dynamiques.</p>
+                <div className="ready__buttons">
+                    <button className="ready__button ready__button--dark">Lancez-vous</button>
+                    <button className="ready__button ready__button--light">En savoir plus</button>
+                </div>
             </div>
         </section>
     );
