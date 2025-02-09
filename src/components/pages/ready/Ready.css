@@ -4,6 +4,9 @@
     color: #1F2BA6;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
+    border: 2px solid white;
+    margin: 40px;
+    border-radius: 8px;
 }
 
 .ready__content {
