@@ -1,10 +1,10 @@
 .ready {
     padding: 80px 0;
     background-color: #E6E8FF;
-    color: #1F2BA6;
+    color: #262D6A;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid white;
+    border: 2px solid #E6E8FF;
     margin: 40px;
     border-radius: 8px;
 }
@@ -33,7 +33,7 @@
 
 .ready p {
     font-size: 18px;
-    color: #1F2BA6;
+    color: #262D6A;
     opacity: 0.8;
     max-width: 50%;
 }
@@ -53,15 +53,15 @@
 }
 
 .ready__button--dark {
-    background-color: #1F2BA6;
+    background-color: #262D6A;
     color: white;
     border: none;
 }
 
 .ready__button--light {
     background-color: transparent;
-    color: #1F2BA6;
-    border: 1px solid #1F2BA6;
+    color: #262D6A;
+    border: 1px solid #262D6A;
 }
 
 .ready__button:hover {
