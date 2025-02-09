@@ -10,8 +10,8 @@ function Footer() {
                     <div className="footer__social">
                         <a href="#" className="footer__social-link"><i className="uil uil-instagram"></i></a>
                         <a href="#" className="footer__social-link"><i className="uil uil-facebook-f"></i></a>
-                        <a href="#" className="footer__social-link"><i className="uil uil-pinterest"></i></a>
-                        <a href="#" className="footer__social-link"><i className="uil uil-tiktok"></i></a>
+                        <a href="#" className="footer__social-link"><i className="uil uil-pinterest-alt"></i></a>
+                        <a href="#" className="footer__social-link"><i className="uil uil-youtube"></i></a>
                     </div>
                 </div>
                 <div className="footer__center">
