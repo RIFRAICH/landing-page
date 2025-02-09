@@ -24,18 +24,23 @@
     line-height: 1.2;
 }
 
+.ready__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .ready p {
     font-size: 18px;
-    margin-bottom: 40px;
     color: #1F2BA6;
     opacity: 0.8;
+    max-width: 50%;
 }
 
 .ready__buttons {
     display: flex;
     gap: 16px;
-    align-self: flex-start;
-    margin-top: -20px;
 }
 
 .ready__button {
