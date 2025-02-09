@@ -2,7 +2,7 @@ import './HeaderV2.css'
 import {useEffect} from "react";
 import Logo from '../../../assets/img/logo.png';
 import {
-    UilApps, UilComment,
+    UilBars, UilComment,
     UilTimes
 } from "@iconscout/react-unicons";
 import { UilClipboardNotes } from "@iconscout/react-unicons";
@@ -40,12 +40,21 @@ function HeaderV2(){
             link.addEventListener('click', handleLinkClick);
         });
 
+        // Fermer le menu lors d'un clic sur l'overlay
+        const overlay = document.getElementById('nav-overlay');
+        if (overlay) {
+            overlay.addEventListener('click', hideMenu);
+        }
+
         return () => {
             if (navToggle) {
                 navToggle.removeEventListener('click', showMenu);
             }
             if (navClose) {
                 navClose.removeEventListener('click', hideMenu);
+            }
+            if (overlay) {
+                overlay.removeEventListener('click', hideMenu);
             }
             navLinks.forEach(link => {
                 link.removeEventListener('click', handleLinkClick);
@@ -78,7 +87,7 @@ function HeaderV2(){
 
                 <div className="nav__btns">
                     <div className="nav__toggle" id="nav-toggle">
-                        <UilApps size="24"/>
+                        <UilBars size="24"/>
                     </div>
                 </div>
 
@@ -91,6 +100,7 @@ function HeaderV2(){
                     </ul>
                     <UilTimes className="nav__close" id="nav-close"/>
                 </div>
+                <div className="nav__overlay" id="nav-overlay"></div>
             </nav>
         </header>
     )
