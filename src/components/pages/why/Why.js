@@ -1,5 +1,5 @@
 import './Why.css'
-import UilWallet from "@iconscout/react-unicons/icons/uil-wallet";
+import {UilWallet} from "@iconscout/react-unicons";
 import {UilHeadphones, UilStar} from "@iconscout/react-unicons";
 import why from '../../../assets/img/why.jpeg'
 

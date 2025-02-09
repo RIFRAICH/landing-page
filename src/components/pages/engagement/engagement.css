@@ -1,93 +1,166 @@
+/* Section principale des engagements */
 .engagement {
-    padding: 4rem 2rem;
+    padding: 0;
     background-color: white;
+    width: 100%;
 }
 
 .engagement__title {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #000;
+    color: #1E22AA;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .engagement__subtitle {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 4rem;
-    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 64px;
+    line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .engagement__cards {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    gap: 80px;
 }
 
 .engagement__card {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    background-color: #1F2BA6;
-    border-radius: 0;
-    padding: 0;
-    color: white;
+    display: flex; /* Utilisation de flexbox pour la mise en page */
+    min-height: 400px;
     position: relative;
-    overflow: hidden;
+    align-items: stretch; /* Étire les éléments enfants */
+    margin: 0;
+    padding: 0;
+    overflow: visible; /* Permet à l'image de déborder */
+}
+
+.engagement__card--white-first {
+    flex-direction: row-reverse;
+}
+
+.engagement__card--white-first .engagement__content {
+    background-color: #1F2BA6;
+    text-align: right;
+}
+
+.engagement__card--white-first .engagement__content h4,
+.engagement__card--white-first .engagement__content p {
+    margin-left: auto;
+}
+
+.engagement__card--white-first .engagement__image {
+    left: auto;
+    right: -66%;
 }
 
 .engagement__content {
-    flex: 1;
-    padding: 3rem;
-    z-index: 1;
+    width: 66.66%;
+    background-color: #1F2BA6;
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.engagement__image-container {
+    width: 33.33%;
+    background-color: white;
+    position: relative;
+    overflow: visible;
+}
+
+.engagement__content {
+    width: 66.66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
 }
 
 .engagement__content h4 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
+    font-size: 48px;
     font-weight: 600;
+    line-height: 1.2;
+    max-width: 600px;
+    margin-bottom: 32px;
 }
 
 .engagement__content p {
     line-height: 1.6;
-    font-size: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 500px;
+    opacity: 0.9;
 }
 
 .engagement__image {
-    width: 400px;
-    height: 100%;
-    object-fit: cover;
     position: absolute;
-    right: 0;
+    left: -66%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    z-index: 2;
+}
+
+@media (max-width: 1200px) {
+    .engagement__content {
+        padding: 3rem 4rem;
+    }
+    
+    .engagement__content h4 {
+        font-size: 1.75rem;
+    }
 }
 
 @media (max-width: 968px) {
-    .engagement__card {
+    .engagement__card,
+    .engagement__card:nth-child(even) {
         flex-direction: column;
     }
 
-    .engagement__image {
-        position: relative;
+    .engagement__content,
+    .engagement__card:nth-child(even) .engagement__content {
         width: 100%;
-        height: 300px;
+        padding: 2rem;
+        text-align: left;
     }
 
-    .engagement__content {
-        padding: 2rem;
+    .engagement__image {
+        width: 100%;
+        height: 400px;
     }
 }
 
 @media (max-width: 768px) {
-    .engagement__title {
-        font-size: 1.25rem;
+    .engagement {
+        padding: 3rem 0;
     }
 
     .engagement__subtitle {
         font-size: 1.5rem;
+        padding: 0 1rem;
     }
 
     .engagement__content h4 {
         font-size: 1.5rem;
+    }
+
+    .engagement__content p {
+        font-size: 1rem;
+    }
+
+    .engagement__image {
+        height: 300px;
     }
 }

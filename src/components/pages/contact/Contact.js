@@ -1,5 +1,5 @@
 import './Contact.css';
-import UilMessage from "@iconscout/react-unicons/icons/uil-message";
+import { UilMessage } from "@iconscout/react-unicons";
 import { useState } from 'react';
 
 function Contact() {
