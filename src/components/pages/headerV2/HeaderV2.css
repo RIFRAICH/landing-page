@@ -217,7 +217,7 @@ html{
     }
 
     .nav{
-        height: 100px;
+        height: calc(3rem + 1.5rem);
         column-gap: 1rem;
     }
     
