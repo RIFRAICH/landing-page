@@ -62,23 +62,13 @@ function HeaderV2(){
                 </div>
 
                 <div className="nav__menu" id="nav-menu">
-                    <ul className="nav__list grid">
-                    <li className="nav__item"><a className="nav__link header__link header__navlink" href="#concept">
-                            <UilClipboardNotes className="nav__icon"/>
-                            Notre concept</a></li>
-                        <li className="nav__item"><a className="nav__link header__link header__navlink"
-                                                     href="#howtowork">
-                            <UilCompass className="nav__icon"/>
-                            Comment ça marche ?</a></li>
-                        <li className="nav__item"><a className="nav__link header__link header__navlink" href="#why">
-                            <UilUserCheck className="nav__icon"/>
-                            Pourquoi nous choisir</a></li>
-                        <li className="nav__item"><a className="nav__link header__link header__navlink" href="#contact">
-                            <UilComment className="nav__icon"/>
-                            Contact</a></li>
+                    <ul className="nav__list">
+                        <li className="nav__item"><a href="#" className="nav__link">A propos de nous</a></li>
+                        <li className="nav__item"><a href="#" className="nav__link">Nos engagements</a></li>
+                        <li className="nav__item"><a href="#" className="nav__link">Pourquoi nous choisir</a></li>
                     </ul>
-                    <UilTimes className="nav__close" id="nav-close"/>
                 </div>
+                <button className="nav__contact">Contactez-nous</button>
 
                 <div className="nav__btns">
                     <div className="nav__toggle" id="nav-toggle">
