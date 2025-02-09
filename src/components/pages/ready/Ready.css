@@ -1,10 +1,13 @@
+body {
+    background-color: white;
+}
+
 .ready {
     padding: 80px 0;
     background-color: #E6E8FF;
     color: #262D6A;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid white;
     margin: 40px;
     border-radius: 8px;
 }
