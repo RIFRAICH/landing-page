@@ -1,29 +1,37 @@
 import './Footer.css'
-import logoWhite from '../../../assets/img/logo-white.png'
 
 function Footer() {
     return (
         <footer>
             <section className="footer__sections">
-                <img src={logoWhite} alt="Logo RIFRAICH" className="footer__logo"/>
-                <ul>
-                    <li className="footer__text"><a className="footer__link" href="#concept">Notre concept</a></li>
-                    <li className="footer__text"><a className="footer__link" href="#howtowork">Comment ça marche ?</a></li>
-                    <li className="footer__text"><a className="footer__link" href="#why">Pourquoi nous choisir</a></li>
-                </ul>
-                <ul>
-                    <li className="footer__text"><a className="footer__link" href="https://blog.rifraich.fr"
-                                                    target="_blank" rel="noreferrer">Blog</a>
-                    </li>
-                    <li className="footer__text"><a className="footer__link" href="https://status.rifraich.fr"
-                                                    target="_blank" rel="noreferrer">État des
-                        services</a>
-                    </li>
-                </ul>
+                <div className="footer__left">
+                    <h3>Demandez votre démonstration gratuite dès maintenant</h3>
+                    <button className="footer__button">Contactez-nous</button>
+                    <div className="footer__social">
+                        <a href="#" className="footer__social-link"><i className="uil uil-instagram"></i></a>
+                        <a href="#" className="footer__social-link"><i className="uil uil-facebook-f"></i></a>
+                        <a href="#" className="footer__social-link"><i className="uil uil-pinterest"></i></a>
+                        <a href="#" className="footer__social-link"><i className="uil uil-tiktok"></i></a>
+                    </div>
+                </div>
+                <div className="footer__center">
+                    <h4>La compagnie</h4>
+                    <ul>
+                        <li><a href="#" className="footer__link">À propos de nous</a></li>
+                        <li><a href="#" className="footer__link">Nos engagements</a></li>
+                        <li><a href="#" className="footer__link">Pourquoi nous choisir ?</a></li>
+                    </ul>
+                </div>
+                <div className="footer__right">
+                    <h4>Besoin d'aide ?</h4>
+                    <ul>
+                        <li><a href="#" className="footer__link">Vendre</a></li>
+                        <li><a href="#" className="footer__link">Conditions générales de vente (CGV)</a></li>
+                        <li><a href="#" className="footer__link">Contactez-nous</a></li>
+                    </ul>
+                </div>
             </section>
-            <hr className="footer__spacer"/>
-            <a href="#index" className="footer__text footer__link">Mentions légales</a>
-            <p className="footer__text">©2024 RIFRAICH - Angers, France</p>
+            <p className="footer__copyright">© 2025 RIFRAICH. All Rights Reserved.</p>
         </footer>
     )
 }
