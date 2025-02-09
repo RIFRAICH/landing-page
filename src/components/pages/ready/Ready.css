@@ -13,6 +13,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .ready h2 {
@@ -32,6 +34,8 @@
 .ready__buttons {
     display: flex;
     gap: 16px;
+    align-self: flex-start;
+    margin-top: -20px;
 }
 
 .ready__button {
