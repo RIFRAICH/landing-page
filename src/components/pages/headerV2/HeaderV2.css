@@ -217,20 +217,16 @@ html{
     }
 
     .nav{
-        height: calc(3rem + 1.5rem);
+        height: 100px;
         column-gap: 1rem;
     }
+    
     .nav__icon,
     .nav__close,
-    .nav__toggle{
+    .nav__toggle,
+    .nav__menu,
+    .nav__overlay {
         display: none;
-    }
-    .nav__list{
-        display: flex;
-        column-gap: 2rem;
-    }
-    .nav__menu{
-        margin-left: auto;
     }
 }
 
