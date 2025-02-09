@@ -1,0 +1,40 @@
+.ready {
+    padding: 80px 0;
+    background-color: #1F2BA6;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ready__content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ready h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.ready p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.ready__button {
+    background-color: white;
+    color: #1F2BA6;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ready__button:hover {
+    transform: scale(1.05);
+}
