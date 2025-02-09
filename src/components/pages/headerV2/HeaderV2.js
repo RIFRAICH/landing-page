@@ -78,8 +78,18 @@ function HeaderV2(){
 
                 <div className="nav__btns">
                     <div className="nav__toggle" id="nav-toggle">
-                    <UilApps/>
+                        <UilApps size="24"/>
                     </div>
+                </div>
+
+                <div className="nav__menu" id="nav-menu">
+                    <ul className="nav__list">
+                        <li className="nav__item"><a href="#" className="nav__link">A propos de nous</a></li>
+                        <li className="nav__item"><a href="#" className="nav__link">Nos engagements</a></li>
+                        <li className="nav__item"><a href="#" className="nav__link">Pourquoi nous choisir</a></li>
+                        <li className="nav__item"><button className="nav__contact">Contactez-nous</button></li>
+                    </ul>
+                    <UilTimes className="nav__close" id="nav-close"/>
                 </div>
             </nav>
         </header>

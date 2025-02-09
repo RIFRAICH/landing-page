@@ -85,15 +85,48 @@ html{
 }
 
 @media screen and (max-width: 767px) {
-    .nav__menu{
+    .nav__left, .nav__right {
+        display: none;
+    }
+
+    .nav {
+        grid-template-columns: auto auto;
+        padding: 0 20px;
+    }
+
+    .nav__center {
+        justify-self: start;
+    }
+
+    .nav__btns {
+        justify-self: end;
+    }
+
+    .nav__menu {
         position: fixed;
-        bottom: -100%;
-        left: 0;
-        background-color: hsl(230, 60%, 99%);
-        padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
-        border-radius: 1.5rem 1.5rem 0 0;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        padding: 80px 40px;
+        width: 80%;
+        box-shadow: 2px 0 4px rgba(0,0,0,.1);
         transition: .3s;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .nav__link {
+        padding: 0;
+    }
+
+    .show-menu {
+        left: 0;
     }
 }
 
