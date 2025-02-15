@@ -30,6 +30,7 @@
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid #eee;
+    height: 100px;
 }
 
 .nav {
@@ -110,14 +111,15 @@ html{
     .nav__menu {
         position: fixed;
         left: -100%;
-        top: 0;
+        top: 100px;
         bottom: 0;
         background-color: white;
-        padding: 80px 40px;
+        padding: 40px;
         width: 75%;
         box-shadow: 2px 0 4px rgba(0,0,0,.1);
         transition: .3s;
         z-index: 1000;
+        overflow-y: auto;
     }
 
     .nav__overlay {
@@ -195,7 +197,7 @@ html{
 .nav__close{
     position: absolute;
     right: 1.3rem;
-    bottom: .5rem;
+    top: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: hsl(230, 69%, 61%);
