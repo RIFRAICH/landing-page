@@ -12,7 +12,6 @@ const ScrollingBanner = () => {
 
     return (
         <section className={styles.bannerWrapper}>
-            {/* Première bannière */}
             <div className={styles.container} style={{ transform: 'rotate(2.222deg)' }}>
                 <motion.div
                     className={styles.scrollingContent}
@@ -34,7 +33,6 @@ const ScrollingBanner = () => {
                 </motion.div>
             </div>
 
-            {/* Deuxième bannière */}
             <div className={styles.containerBlack} style={{ transform: 'rotate(-6.362deg)', backgroundColor: 'black' }}>
                 <motion.div
                     className={styles.scrollingContent}

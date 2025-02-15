@@ -10,7 +10,7 @@ function Home(){
             <ScrollingBanner />
             <section className={styles.container}>
                 <section style={{ flex: 1 }} />
-                <p className={styles.mainText}>Encore un instant... On règle les derniers détails (et les ourlets) !</p>
+                <p className={styles.mainText}>Encore un instant... On règle les derniers détails !</p>
                 <section className={styles.socialsContainer}>
                     <p className={styles.socialText}>En attendant, tu peux nous suivre sur les réseaux :</p>
                     <section className={styles.socialLinksContainer}>
