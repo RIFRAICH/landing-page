@@ -64,9 +64,7 @@
 
 .home__description {
   color: #1B1B1B;
-
-  font-feature-settings: 'calt' off;
-  font-family: Jost;
+  font-family: 'Jost', sans-serif;
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
