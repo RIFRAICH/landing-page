@@ -54,17 +54,21 @@
 
 .home__title {
   padding-top: 2rem;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #000;
   margin: 0;
-  line-height: 1.2;
   width: 150%;
+  color: #1B1B1B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+  letter-spacing: 0.56px;
 }
 
 .home__description {
   color: #1B1B1B;
-  font-family: 'Jost', sans-serif;
+  font-feature-settings: 'calt' off;
+  font-family: 'Jost', sans-serif; /* Utilisation de la police Jost */
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
@@ -72,19 +76,27 @@
   letter-spacing: -0.24px;
   font-size: 1.2rem;
   line-height: 1.6;
+  width: 398px;
 }
 
 .home__cta {
-  display: inline-block;
   background-color: #1E22AA;
   color: white;
   border: none;
-  padding: 1rem 2rem;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
   font-weight: 600;
+  display: flex;
+  transform: rotate(-0.129deg);
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  align-self: stretch;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .home__center {
@@ -115,10 +127,14 @@
 
 .home__right-text {
   color: white;
-  font-size: 3.5rem;
   font-weight: 700;
-  line-height: 1.2;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-left: -30%;
 }
 
 /* Responsive Mobile */
