@@ -4,7 +4,7 @@ import { ChartIcon, PackageIcon, PlugsIcon } from '../../../utils/Icons';
 
 const About = () => {
     return (
-        <section className="about">
+        <section className="about" id="about">
             <h2 className="about__title">À PROPOS DE NOUS</h2>
             <h3 className="about__subtitle">
                 Rifraich vous offre une solution clé en main<br />

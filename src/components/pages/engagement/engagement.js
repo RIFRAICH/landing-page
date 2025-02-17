@@ -1,5 +1,5 @@
 import React from 'react';
-import './Engagement.css';
+import './engagement.css';
 import landing1 from '../../../assets/img/landing1.png';
 import landing2 from '../../../assets/img/landing2.png';
 import landing3 from '../../../assets/img/landing3.png';
@@ -11,7 +11,7 @@ import landing3 from '../../../assets/img/landing3.png';
  */
 function Engagement() {
     return (
-        <section className="engagement">
+        <section className="engagement" id="engagement">
             {/* Titre et sous-titre de la section */}
             <h2 className="engagement__title">NOS ENGAGEMENTS</h2>
             <h3 className="engagement__subtitle">La mode seconde main, c'est notre passion</h3>

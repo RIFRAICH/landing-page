@@ -1,6 +1,6 @@
 import './HeaderV2.css'
 import {useEffect} from "react";
-import Logo from '../../../assets/img/logo.png';
+
 import {
     UilBars, UilComment,
     UilTimes
@@ -67,20 +67,20 @@ function HeaderV2(){
             <nav className="nav container">
                 <div className="nav__left">
                     <ul className="nav__list">
-                        <li className="nav__item"><a href="#" className="nav__link">A propos de nous</a></li>
-                        <li className="nav__item"><a href="#" className="nav__link">Nos engagements</a></li>
+                        <li className="nav__item"><a href="#about" className="nav__link">A propos de nous</a></li>
+                        <li className="nav__item"><a href="#engagement" className="nav__link">Nos engagements</a></li>
                     </ul>
                 </div>
 
                 <div className="nav__center">
-                    <a className="nav__logo" href="#index">
+                    <a className="nav__logo" href="#">
                         <span className="header__logotext">R I F R A I C H</span>
                     </a>
                 </div>
 
                 <div className="nav__right">
                     <ul className="nav__list">
-                        <li className="nav__item"><a href="#" className="nav__link">Pourquoi nous choisir</a></li>
+                        <li className="nav__item"><a href="#ready" className="nav__link">Pourquoi nous choisir</a></li>
                     </ul>
                     <button className="nav__contact">Contactez-nous</button>
                 </div>
@@ -93,9 +93,9 @@ function HeaderV2(){
 
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list">
-                        <li className="nav__item"><a href="#" className="nav__link">A propos de nous</a></li>
-                        <li className="nav__item"><a href="#" className="nav__link">Nos engagements</a></li>
-                        <li className="nav__item"><a href="#" className="nav__link">Pourquoi nous choisir</a></li>
+                        <li className="nav__item"><a href="#about" className="nav__link">A propos de nous</a></li>
+                        <li className="nav__item"><a href="#engagement" className="nav__link">Nos engagements</a></li>
+                        <li className="nav__item"><a href="#ready" className="nav__link">Pourquoi nous choisir</a></li>
                         <li className="nav__item"><button className="nav__contact">Contactez-nous</button></li>
                     </ul>
                     <UilTimes className="nav__close" id="nav-close"/>

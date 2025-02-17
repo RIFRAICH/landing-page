@@ -3,7 +3,7 @@ import './Ready.css';
 
 function Ready() {
     return (
-        <section className="ready">
+        <section className="ready" id="ready">
             <div className="ready__content">
                 <h2>Prêt à révolutionner votre manière<br />de vendre des vêtements<br />d'occasion ?</h2>
                 <div className="ready__flex-container">
