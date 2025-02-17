@@ -1,38 +1,49 @@
+/* Section principale du footer */
 footer {
-    padding: 60px 120px 40px;
+    padding: 40px 20px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
+/* Organisation en colonne sur mobile */
 .footer__sections {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 60px;
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
+/* Section gauche (bouton & réseaux) */
 .footer__left h3 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     color: #000;
-    margin-bottom: 24px;
-    max-width: 300px;
+    margin-bottom: 16px;
+    max-width: 280px;
 }
 
+/* Bouton adapté aux mobiles */
 .footer__button {
     background-color: #1F2BA6;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-bottom: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 250px;
 }
 
+/* Alignement des icônes sociales */
 .footer__social {
     display: flex;
-    gap: 16px;
+    gap: 12px;
+    justify-content: center;
 }
 
 .footer__social-link {
@@ -41,47 +52,55 @@ footer {
     text-decoration: none;
 }
 
+/* Sections centrales */
 .footer__center h4,
 .footer__right h4 {
     font-size: 16px;
     font-weight: 600;
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
+/* Ajustement des liens */
 .footer__link {
     text-decoration: none;
     color: #666;
-    display: block;
-    margin-bottom: 16px;
     font-size: 14px;
+    line-height: 1.6;
 }
 
+/* Copyright */
 .footer__copyright {
     color: #666;
     font-size: 12px;
-    padding-top: 20px;
+    padding-top: 15px;
     border-top: 1px solid #eee;
+    width: 100%;
 }
 
-@media screen and (max-width: 564px) {
+/* Responsive Tablette */
+@media screen and (min-width: 768px) {
     footer {
-        padding: 120px 60px;
+        padding: 60px 40px;
     }
-}
 
-@media screen and (max-width: 1100px) {
     .footer__sections {
-        flex-direction: column;
-        gap: 48px;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
     }
-    footer {
-        text-align: center;
-        padding: 80px 80px;
+
+    .footer__left,
+    .footer__center,
+    .footer__right {
+        width: 30%;
     }
-    .footer__spacer {
-        width: 90%;
-        margin-left: auto;
+
+    .footer__button {
+        width: auto;
+    }
+
+    .footer__social {
+        justify-content: flex-start;
     }
 }

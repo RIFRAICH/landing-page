@@ -4,7 +4,7 @@
   overflow: hidden;
   height: 5vw;
   margin-left: -4.5vw;
-  margin-top: -3vw;
+  margin-top: -5vw;
   z-index: 3;
 }
 
@@ -50,30 +50,36 @@
 
 @media (max-width: 768px) {
   .banner-container {
-    height: 8vw; /* Ajustez la hauteur de la bande pour les écrans plus petits */
+    height: 10vw; /* Augmentation de la hauteur pour plus de visibilité */
+  }
+
+  .banner-content {
+    padding: 10px 0; /* Réduction du padding pour compacter */
   }
 
   .banner-text {
-    font-size: 24px; /* Ajustez la taille de la police pour les écrans plus petits */
+    font-size: 20px; /* Réduction de la taille du texte */
+    letter-spacing: 0.2px;
   }
 
   .icon {
-    width: 24px; /* Ajustez la taille de l'icône pour les écrans plus petits */
-    height: 24px; /* Ajustez la taille de l'icône pour les écrans plus petits */
+    width: 20px; /* Réduction de l’icône */
+    height: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .banner-container {
-    height: 8vw; /* Ajustez la hauteur de la bande pour les écrans plus petits */
+    height: 8vw; /* Réduction de la hauteur pour les petits écrans */
+    margin-top: -2vw;
   }
 
   .banner-text {
-    font-size: 15px; /* Ajustez la taille de la police pour les écrans plus petits */
+    font-size: 16px; /* Texte plus petit pour éviter qu’il ne prenne trop de place */
   }
 
   .icon {
-    width: 15px; /* Ajustez la taille de l'icône pour les écrans plus petits */
-    height: 15px; /* Ajustez la taille de l'icône pour les écrans plus petits */
+    width: 16px;
+    height: 16px;
   }
 }

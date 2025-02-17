@@ -1,8 +1,7 @@
 /* Section principale des engagements */
-.engagement {
-    padding: 0;
+.engagement { 
+    padding: 0px;
     background-color: white;
-    width: 100%;
 }
 
 .engagement__title {
@@ -132,35 +131,107 @@
     .engagement__content,
     .engagement__card:nth-child(even) .engagement__content {
         width: 100%;
-        padding: 2rem;
         text-align: left;
     }
 
     .engagement__image {
         width: 100%;
         height: 400px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
     }
 }
 
 @media (max-width: 768px) {
-    .engagement {
-        padding: 3rem 0;
+    .engagement { 
+        padding: 60px 20px;
+    }
+
+    .engagement__cards {
+        display: flex;
+        flex-direction: column; /* Mise en colonne */
+        gap: 0px; /* Espacement uniforme */
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .engagement__subtitle {
         font-size: 1.5rem;
         padding: 0 1rem;
     }
+    
 
     .engagement__content h4 {
-        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
     }
 
     .engagement__content p {
-        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     .engagement__image {
-        height: 300px;
+        display: none;
+    }
+
+    .engagement__card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 0px;
+        padding: 24px;
+        border-radius: 12px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .engagement__card--white-first {
+        flex-direction: column; /* Applique les mêmes propriétés que engagement__card */
+        align-items: center;
+        text-align: center;
+    }
+
+    .engagement__card--white-first .engagement__image {
+        display: none;
+    }
+
+    .engagement__content {
+        width: 100%;
+        background-color: #1F2BA6;
+        color: white;
+        text-align: justify;
+        border-radius: 8px; /* Ajoute des bords arrondis */
+    }
+
+    .engagement__image-container {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .engagement__cards {
+        gap: 0px;
+    }
+
+    .engagement__content {
+        padding: 1rem;
+    }
+
+    .engagement__content h4 {
+        font-size: 1.25rem;
+    }
+
+    .engagement__content p {
+        font-size: 0.875rem;
+    }
+
+    .engagement__image {
+        display: none;
     }
 }
