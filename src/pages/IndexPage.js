@@ -1,4 +1,3 @@
-import './IndexPage.css';
 import Home from "../components/pages/home/Home";
 import Footer from "../components/pages/footer/Footer";
 import HeaderV2 from "../components/pages/headerV2/HeaderV2";

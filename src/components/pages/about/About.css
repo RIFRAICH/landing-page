@@ -1,5 +1,6 @@
 .about {
     padding: 60px 20px; /* Réduction du padding pour mobile */
+    margin-top: 210px;
     background-color: white;
     text-align: center;
 }
@@ -78,3 +79,11 @@
         max-width: 300px;
     }
 }
+
+/* Responsive uniquement pour mobile */
+@media screen and (max-width: 768px) {
+    .about {
+        margin-top: 80px;
+    }
+}
+

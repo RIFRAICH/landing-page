@@ -1,6 +1,6 @@
 import React from 'react';
-import { UilChartGrowth, UilBox, UilTruck } from '@iconscout/react-unicons';
 import './About.css';
+import { ChartIcon, PackageIcon, PlugsIcon } from '../../../utils/Icons';
 
 const About = () => {
     return (
@@ -13,7 +13,7 @@ const About = () => {
             <div className="about__cards">
                 <div className="about__card">
                     <div className="about__card-icon">
-                        <UilChartGrowth size="32" />
+                        <ChartIcon size={48}/>
                     </div>
                     <h4 className="about__card-title">
                         Augmentez la visibilité de votre boutique
@@ -24,7 +24,7 @@ const About = () => {
                 </div>
                 <div className="about__card">
                     <div className="about__card-icon">
-                        <UilBox size="32" />
+                        <PlugsIcon size={48}/>
                     </div>
                     <h4 className="about__card-title">
                         Gérez facilement votre stock
@@ -35,7 +35,7 @@ const About = () => {
                 </div>
                 <div className="about__card">
                     <div className="about__card-icon">
-                        <UilTruck size="32" />
+                        <PackageIcon size={48}/>
                     </div>
                     <h4 className="about__card-title">
                         Nous nous occupons de la livraison et du paiement

@@ -1,4 +1,7 @@
 import './Footer.css'
+import {Link} from "react-router-dom";
+import { InstagramIcon, FacebookIcon, PinterestIcon, TiktokIcon } from '../../../utils/Icons';
+import { SOCIAL_FACEBOOK_URL, SOCIAL_INSTAGRAM_URL, SOCIAL_PINTEREST_URL, SOCIAL_TIKTOK_URL } from '../../../utils/Constants';
 
 function Footer() {
     return (
@@ -8,9 +11,10 @@ function Footer() {
                     <h3>Demandez votre démonstration gratuite dès maintenant</h3>
                     <button className="footer__button">Contactez-nous</button>
                     <div className="footer__social">
-                        <a href="#" className="footer__social-link"><i className="uil uil-instagram"></i></a>
-                        <a href="#" className="footer__social-link"><i className="uil uil-facebook-f"></i></a>
-                        {/* Tiktok et pintereset ne sont pas dans la librairie */}
+                        <Link to={SOCIAL_INSTAGRAM_URL} target="_blank"><InstagramIcon size={20}/></Link>
+                        <Link to={SOCIAL_FACEBOOK_URL} target="_blank"><FacebookIcon size={20}/></Link>
+                        <Link to={SOCIAL_PINTEREST_URL} target="_blank"><PinterestIcon size={20}/></Link>
+                        <Link to={SOCIAL_TIKTOK_URL} target="_blank"><TiktokIcon size={20}/></Link>
                     </div>
                 </div>
                 <div className="footer__center">

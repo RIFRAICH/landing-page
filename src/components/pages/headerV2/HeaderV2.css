@@ -33,6 +33,7 @@
 }
 
 .nav {
+    color: #1B1B1B;
     padding: 0 10%;
     height: 100px;
     display: grid;
@@ -160,8 +161,12 @@ html{
 }
 
 .nav__link {
-    font-size: 14px;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.15px;
     color: #000;
     text-decoration: none;
     transition: 0.2s;

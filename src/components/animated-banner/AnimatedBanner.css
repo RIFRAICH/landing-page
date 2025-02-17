@@ -1,6 +1,6 @@
 .banner-container {
   position: relative;
-  width: 103.5vw;
+  width: 105vw;
   overflow: hidden;
   height: 5vw;
   margin-left: -4.5vw;
@@ -71,7 +71,7 @@
 @media (max-width: 480px) {
   .banner-container {
     height: 8vw; /* Réduction de la hauteur pour les petits écrans */
-    margin-top: -2vw;
+    margin-top: -3vw;
   }
 
   .banner-text {
