@@ -2,12 +2,8 @@ import './HeaderV2.css'
 import {useEffect} from "react";
 
 import {
-    UilBars, UilComment,
-    UilTimes
+    UilBars, UilTimes
 } from "@iconscout/react-unicons";
-import { UilClipboardNotes } from "@iconscout/react-unicons";
-import { UilCompass } from "@iconscout/react-unicons";
-import { UilUserCheck } from "@iconscout/react-unicons";
 
 function HeaderV2(){
     useEffect(() => {
