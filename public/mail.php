@@ -16,5 +16,5 @@ $headers = 'From: RIFRAICH <noreply@rifraich.fr>' . "\r\n" .
            'Reply-To: '. $email . "\r\n" .
            'X-Mailer: PHP/' . phpversion();
 
-mail("contact@rifraich.fr", "Message via landing page : ". $subject, "Nom : ". $name ."\r\nPrenom : ". $firstname . "\r\nEmail : ". $email ."\r\nTelephone : ". $phone ."\r\Type de demande : ". $type ."\r\nObjet : ". $subject ."\r\n \r\n". $message, $headers);
+mail("contact@rifraich.fr", "Message via landing page : ". $subject, "Nom : ". $name ."\r\nPrenom : ". $firstname . "\r\nEmail : ". $email ."\r\nTelephone : ". $phone ."\r\nType de demande : ". $type ."\r\nObjet : ". $subject ."\r\n \r\n". $message, $headers);
 echo 'true';
