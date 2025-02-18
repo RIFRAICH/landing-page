@@ -92,7 +92,7 @@ function HeaderV2(){
                         <li className="nav__item"><a href="#about" className="nav__link">A propos de nous</a></li>
                         <li className="nav__item"><a href="#engagement" className="nav__link">Nos engagements</a></li>
                         <li className="nav__item"><a href="#ready" className="nav__link">Pourquoi nous choisir</a></li>
-                        <li className="nav__item"><a href="#contact" className="nav__link"><button className="nav__contact">Contactez-nous</button></a></li>
+                        <li className="nav__item"><a href="#contact"><button className="nav__contact">Contactez-nous</button></a></li>
                     </ul>
                     <UilTimes className="nav__close" id="nav-close"/>
                 </div>
