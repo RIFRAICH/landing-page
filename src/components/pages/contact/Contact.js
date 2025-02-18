@@ -72,7 +72,7 @@ function Contact() {
                 </section>
                 <section className="contact__formsection">
                     <section className="contact__forminput">
-                        <input type="type" id="type" name="type" placeholder="Votre demande concerne" required value={formData.email} onChange={handleInputChange} />
+                        <input type="type" id="type" name="type" placeholder="Votre demande concerne" required value={formData.type} onChange={handleInputChange} />
                     </section>
                     <section className="contact__forminput">
                         <input type="text" id="subject" name="subject" placeholder="Précisez l'objet de votre message" required value={formData.subject} onChange={handleInputChange} />
