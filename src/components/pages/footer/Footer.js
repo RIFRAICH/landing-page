@@ -20,19 +20,19 @@ function Footer() {
                 <div className="footer__center">
                     <a href="#about" className="footer__link"><h4>À propos de nous</h4></a>
                     <ul>
-                        <li><a href="#" className="footer__link">Notre mission</a></li>
-                        <li><a href="#" className="footer__link">Durabilité</a></li>
-                        <li><a href="#" className="footer__link">Le Blog RIFRAICH</a></li>
+                        <li><a href="/" className="footer__link">Notre mission</a></li>
+                        <li><a href="/" className="footer__link">Durabilité</a></li>
+                        <li><a href="/" className="footer__link">Le Blog RIFRAICH</a></li>
                     </ul>
                 </div>
                 <div className="footer__right">
                     <h4>Besoin d'aide ?</h4>
                     <ul>
-                        <li><a href="#" className="footer__link">Vendre</a></li>
-                        <li><a href="#" className="footer__link">Acheter</a></li>
-                        <li><a href="#" className="footer__link">Retours</a></li>
-                        <li><a href="#" className="footer__link">Conditions générales de vente (CGV)</a></li>
-                        <li><a href="#" className="footer__link">Mentions légales et CGU</a></li>
+                        <li><a href="/" className="footer__link">Vendre</a></li>
+                        <li><a href="/" className="footer__link">Acheter</a></li>
+                        <li><a href="/" className="footer__link">Retours</a></li>
+                        <li><a href="/" className="footer__link">Conditions générales de vente (CGV)</a></li>
+                        <li><a href="/" className="footer__link">Mentions légales et CGU</a></li>
                     </ul>
                 </div>
             </section>
