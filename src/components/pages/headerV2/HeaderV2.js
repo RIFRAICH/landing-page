@@ -69,7 +69,7 @@ function HeaderV2(){
                 </div>
 
                 <div className="nav__center">
-                    <a className="nav__logo" href="#">
+                    <a className="nav__logo" href="/">
                         <span className="header__logotext">R I F R A I C H</span>
                     </a>
                 </div>
