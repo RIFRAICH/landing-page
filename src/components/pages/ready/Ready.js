@@ -1,5 +1,6 @@
 import React from 'react';
 import './Ready.css';
+import { ArrowIcon } from '../../../utils/Icons';
 
 function Ready() {
     return (
@@ -10,7 +11,10 @@ function Ready() {
                     <p>Rejoignez une communauté de fripiers passionnés et dynamiques.</p>
                     <div className="ready__buttons">
                         <button className="ready__button ready__button--dark">Lancez-vous</button>
-                        <button className="ready__button ready__button--light">En savoir plus</button>
+                        <button className="ready__button ready__button--light">
+                            En savoir plus
+                            <ArrowIcon size={24}/>
+                        </button>
                     </div>
                 </div>
             </div>

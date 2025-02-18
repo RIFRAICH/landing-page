@@ -58,9 +58,12 @@
 }
 
 .ready__button--light {
+    display: flex;
     background-color: transparent;
     color: #262D6A;
     border: 1px solid #262D6A;
+    align-items: center;
+    gap: 5px;
 }
 
 .ready__button:hover {

@@ -1,5 +1,5 @@
 .contact {
-    background-color: #F5FAFB;
+    background-color: white;
     padding-top: 100px;
     padding-left: 180px;
     padding-right: 180px;
@@ -7,23 +7,19 @@
 }
 
 .contact__title {
-    font-family: Montserrat;
-    font-size: 57px;
-    font-weight: 600;
-}
-
-.contact__description {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 24px;
+    color: #000;
     text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 125% */
 }
 
 .contact__form {
-    margin-top: 120px;
+    margin-top: 40px;
     padding: 28px 40px;
-    background-color: #DFE0FF;
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -41,9 +37,12 @@
 }
 
 .contact__forminput label {
-    font-family: Montserrat;
+    font-family: Jost;
     font-size: 16px;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
 }
 
 .contact__forminput label span {
@@ -51,46 +50,57 @@
 }
 
 .contact__forminput input {
-    font-family: Roboto;
     margin-top: 16px;
     height: 48px;
     padding: 4px 0px 4px 16px;
-    font-size: 16px;
-    font-weight: 400;
     border: 1px solid #0E154B;
     border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
 }
 
 .contact__forminput textarea {
-    font-family: Roboto;
     margin-top: 16px;
     height: 200px;
     padding: 16px 0px 4px 16px;
-    font-size: 16px;
-    font-weight: 400;
     border: 1px solid #0E154B;
     border-radius: 4px;
-}
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
+    }
 
 .contact__formsubmit {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .contact__formsubmitbutton {
-    width: 264px;
+    width: 100%;
     padding: 10px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 4px;
-    background-color: #545A92;
+    border-radius: 6px;
+    background-color: #1F2BA6;
     color: #F5FAFB;
-    margin-top: 24px;
+    margin-top: 32px;
     cursor: pointer;
-    right: 1px;
-    text-align: right;
+    text-align: center;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.1px;
 }
 
 .contact__formsubmitbutton:active {
@@ -98,14 +108,18 @@
 }
 
 .contact__formsuccess {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
     color: #509406;
     margin-top: 24px;
     display: flex;
     justify-content: flex-end;
-}
+    text-align: center;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.1px;
+    }
 
 @media screen and (max-width: 768px) {
     .contact__formsection {

@@ -1,14 +1,15 @@
 import './Contact.css';
-import { UilMessage } from "@iconscout/react-unicons";
 import { useState } from 'react';
 
 function Contact() {
 
     const [formData, setFormData] = useState({
         name: '',
+        firstname: '',
         email: '',
-        subject: '',
         phone: '',
+        type: '',
+        subject: '',
         message: ''
     });
     const [formSuccess, setFormSuccess] = useState(false);
@@ -34,9 +35,11 @@ function Contact() {
                 setFormSuccess(true);
                 setFormData({
                     name: '',
+                    firstname: '',
                     email: '',
-                    subject: '',
                     phone: '',
+                    type: '',
+                    subject: '',
                     message: ''
                 });
             } else {
@@ -49,37 +52,38 @@ function Contact() {
 
     return (
         <section id="contact" className="contact">
-            <h2 className="contact__title">Contacte-nous !</h2>
-            <p className="contact__description">RIFRAICH est à ton écoute. N'hésite pas à nous contacter pour toute question, commentaire ou suggestion.</p>
+            <h2 className="contact__title">Nous contacter</h2>
             <form className="contact__form" onSubmit={handleSubmit}>
                 <section className="contact__formsection">
                     <section className="contact__forminput">
-                        <label htmlFor="name">Nom<span>*</span> :</label>
                         <input type="text" id="name" name="name" placeholder="Nom" required value={formData.name} onChange={handleInputChange} />
                     </section>
                     <section className="contact__forminput">
-                        <label htmlFor="email">Email<span>*</span> :</label>
-                        <input type="email" id="email" name="email" placeholder="Email" required value={formData.email} onChange={handleInputChange} />
+                        <input type="text" id="firstname" name="firstname" placeholder="Prénom" required value={formData.firstname} onChange={handleInputChange} />
                     </section>
                 </section>
                 <section className="contact__formsection">
                     <section className="contact__forminput">
-                        <label htmlFor="subject">Sujet<span>*</span> :</label>
-                        <input type="text" id="subject" name="subject" placeholder="Objet" required value={formData.subject} onChange={handleInputChange} />
+                        <input type="email" id="email" name="email" placeholder="Email" required value={formData.email} onChange={handleInputChange} />
                     </section>
                     <section className="contact__forminput">
-                        <label htmlFor="phone">Téléphone :</label>
                         <input type="text" id="phone" name="phone" placeholder="Téléphone" value={formData.phone} onChange={handleInputChange} />
                     </section>
                 </section>
+                <section className="contact__formsection">
+                    <section className="contact__forminput">
+                        <input type="type" id="type" name="type" placeholder="Votre demande concerne" required value={formData.email} onChange={handleInputChange} />
+                    </section>
+                    <section className="contact__forminput">
+                        <input type="text" id="subject" name="subject" placeholder="Précisez l'objet de votre message" required value={formData.subject} onChange={handleInputChange} />
+                    </section>
+                </section>
                 <section className="contact__forminput">
-                    <label htmlFor="message">Message<span>*</span> :</label>
-                    <textarea id="message" name="message" placeholder="Message" required value={formData.message} onChange={handleInputChange} />
+                    <textarea id="message" name="message" placeholder="Votre message" required value={formData.message} onChange={handleInputChange} />
                 </section>
                 <section className="contact__formsubmit">
                     <button className="contact__formsubmitbutton" type="submit">
                         Envoyer
-                        <UilMessage />
                     </button>
                 </section>
                 {formSuccess && (
