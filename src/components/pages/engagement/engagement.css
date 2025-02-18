@@ -52,6 +52,7 @@
 .engagement__card--white-first .engagement__content h4,
 .engagement__card--white-first .engagement__content p {
     margin-left: auto;
+    max-width: 600px;
 }
 
 .engagement__card--white-first .engagement__image {
@@ -67,6 +68,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 24px;
 }
 
 .engagement__image-container {
@@ -78,6 +80,7 @@
 
 .engagement__content {
     width: 66.66%;
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,19 +88,26 @@
 }
 
 .engagement__content h4 {
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 1.2;
     max-width: 600px;
     margin-bottom: 32px;
+    font-feature-settings: 'calt' off;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 57.6px */
+    letter-spacing: -0.36px;
 }
 
 .engagement__content p {
-    line-height: 1.6;
-    font-size: 18px;
-    font-weight: 400;
     max-width: 500px;
     opacity: 0.9;
+    font-family: Jost;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 160%; /* 44.8px */
+    letter-spacing: -0.28px;
 }
 
 .engagement__image {
@@ -107,7 +117,7 @@
     transform: translateY(-50%);
     width: 150%;
     height: auto;
-    max-height: 500px;
+    max-height: 600px;
     object-fit: contain;
     z-index: 2;
 }

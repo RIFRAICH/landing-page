@@ -1,31 +1,36 @@
 /* Section principale du footer */
 footer {
-    padding: 40px 20px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.30);
+    padding: 52px 108px
 }
 
 /* Organisation en colonne sur mobile */
 .footer__sections {
     display: flex;
     flex-direction: column;
-    gap: 32px;
     align-items: center;
     margin-bottom: 30px;
+    justify-content: space-between;
 }
 
 /* Section gauche (bouton & réseaux) */
 .footer__left h3 {
-    font-size: 18px;
-    font-weight: 600;
     color: #000;
     margin-bottom: 16px;
-    max-width: 280px;
+    max-width: 500px;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 125% */
 }
 
 /* Bouton adapté aux mobiles */
 .footer__button {
+    margin-top: 24px;
     background-color: #1F2BA6;
     color: white;
     padding: 10px 20px;
@@ -58,7 +63,7 @@ footer {
     font-size: 16px;
     font-weight: 600;
     color: #000;
-    margin-bottom: 12px;
+    margin: 12 0;
 }
 
 /* Ajustement des liens */
@@ -81,20 +86,17 @@ footer {
 
 /* Responsive Tablette */
 @media screen and (min-width: 768px) {
-    footer {
-        padding: 60px 40px;
-    }
-
     .footer__sections {
         flex-direction: row;
-        justify-content: space-between;
         text-align: left;
+        align-items: start;
     }
 
-    .footer__left,
-    .footer__center,
-    .footer__right {
-        width: 30%;
+    /* Sections centrales */
+    .footer__center h4,
+    .footer__right h4 {
+        margin-bottom: 12px;
+        margin-top: 0px;
     }
 
     .footer__button {
