@@ -24,4 +24,5 @@ yarn-error.log*
 
 # JetBrains
 .idea/
-.aider*
+
+src/config.js
