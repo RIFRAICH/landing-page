@@ -1,0 +1,100 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 1063px;
+  margin-top: 16px;
+}
+
+.mainWhiteSection {
+  background-color: white;
+  width: 50%;
+}
+
+.mainBlueSection {
+  background-color: #1F2BA6;
+  width: 50%;
+}
+
+.mainOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.mainOverlayContent {
+  margin-top: -15%;
+  z-index: 2;
+}
+
+.mainTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14vw;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 2vw;
+  text-align: center;
+}
+
+.mainTitleBlack {
+  color: #121212;
+}
+
+.mainTitleWhite {
+  color: #FFF;
+}
+
+.mainContent {
+  margin-top: 50px;
+  padding-left: 7%;
+  max-width: 30%;
+}
+
+.mainContentTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #1B1B1B;
+}
+
+.mainContentDescription {
+  font-family: 'Jost', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38.4px;
+  letter-spacing: -0.24px;
+  color: #1B1B1B;
+  font-feature-settings: 'calt' off;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+.mainContentButtonContainer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContentButton {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.mainOverlayImgContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.mainOverlayImg {
+  margin-left: 5%;
+  z-index: 3;
+}
