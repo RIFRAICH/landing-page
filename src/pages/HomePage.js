@@ -11,8 +11,8 @@ function HomePage(){
                 <section className={styles.mainOverlay}>
                     <section className={styles.mainOverlayContent}>
                         <h1 className={styles.mainTitle}>
-                            <span className={styles.mainTitleBlack}>RIFR</span>
-                            <span className={styles.mainTitleWhite}>AICH</span>
+                            <span className={styles.mainTitleBlack}>La seconde main</span>
+                            <span className={styles.mainTitleWhite}>prend un nouveau souffle</span>
                         </h1>
                         <section className={styles.mainContent}>
                             <h2 className={styles.mainContentTitle}>Ton dressing unique, à deux pas de chez toi</h2>
