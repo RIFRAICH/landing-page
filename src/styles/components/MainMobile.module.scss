@@ -1,0 +1,48 @@
+@import '../mixins';
+
+.main {
+  margin-top: 16px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: left;
+}
+
+.mainTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1B1B1B;
+}
+
+.mainDescription {
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #1B1B1B;
+  font-feature-settings: 'calt' off;
+  font-style: italic;
+  margin-top: 24px;
+}
+
+.mainContentButtonContainer {
+  margin-top: 24px;
+  display: flex;
+  width: 40%;
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
+.mainContentButton {
+  flex: 1;
+}

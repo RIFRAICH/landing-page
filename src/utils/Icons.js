@@ -79,3 +79,11 @@ export const ArrowRightMinimizedIcon = ({ size = 16 }) => {
         </svg>
     )
 }
+
+export const StarIcon = ({size = 45, stroke = "#1B1B1B", className = ""}) => {
+    return (
+        <svg className={className} width={size} height={size} viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-2)">
+            <path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M24.6104 1.13035L21.6126 1.01401L20.9227 18.7931L9.13122 5.74483L6.92728 7.83277L18.7187 20.881L1.35311 20.2071L1.234 23.2762L18.5996 23.9502L5.83239 36.0453L7.86789 38.2977L20.6351 26.2025L19.9451 43.9817L22.9429 44.098L23.6329 26.3189L35.4243 39.3671L37.6282 37.2793L25.8367 24.231L43.2024 24.905L43.3215 21.8358L25.9558 21.1619L38.7231 9.0667L36.6877 6.81425L23.9204 18.9094L24.6104 1.13035Z" fill={stroke}></path>
+        </svg>
+    )
+}
