@@ -6,6 +6,8 @@ import TitleSection from "../components/pures/TitleSection";
 import AboutCard from "../components/pures/AboutCard";
 import {ChartIcon, PackageIcon, PlugsIcon} from "../utils/Icons";
 import CommitmentCard from "../components/pures/CommitmentCard";
+import manJacketImg from "../assets/img/manJacket.png";
+import womanStrawberryImg from "../assets/img/womanStrawberry.png";
 
 function HomePage(){
     const isTablet = useIsTablet();
@@ -23,8 +25,8 @@ function HomePage(){
             </section>
             <section id="commitment" className={styles.commitmentContainer}>
                 <TitleSection title="Nos engagements" subtitle="La seconde main, c'est notre passion" />
-                <section>
-                    <CommitmentCard />
+                <section className={styles.commitmentCards}>
+                    <CommitmentCard title="Dynamiser la mode seconde main à Angers" description="Nous croyons en la force du lien local. Notre plateforme est conçue pour mettre en valeur la diversité des styles et des univers de chaque boutique, créant ainsi un réseau solidaire où chaque acteur trouve sa place." img={manJacketImg} />
                 </section>
             </section>
         </>
