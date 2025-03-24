@@ -6,10 +6,10 @@ import rifraichLogoImg from "../../../assets/img/rifraich_logo.png";
 const HeaderDesktop = () => {
     return (
         <header className={styles.container}>
-            <Link className={styles.link} to="#">A propos de nous</Link>
-            <Link className={styles.link} to="#">Nos engagements</Link>
+            <Link className={styles.link} to="#about">A propos de nous</Link>
+            <Link className={styles.link} to="#commitment">Nos engagements</Link>
             <img src={rifraichLogoImg} alt="Rifraich Logo" />
-            <Link className={styles.link} to="#">Pourquoi nous choisir</Link>
+            <Link className={styles.link} to="#contact">Pourquoi nous choisir</Link>
             <RoundedButton text="Contactez-nous" buttonColor="#b8beff" textColor="#262D6A" />
         </header>
     )

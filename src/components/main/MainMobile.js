@@ -1,5 +1,7 @@
 import styles from '../../styles/components/MainMobile.module.scss';
 import RoundedButton from "../pures/RoundedButton";
+import womanHomeImg from "../../assets/img/womanHome.png";
+import ScrollingBanner from "../pures/ScollingBanner";
 
 const MainMobile = () => {
     return (
@@ -16,6 +18,13 @@ const MainMobile = () => {
                     />
                 </section>
             </section>
+            <section className={styles.overlayContainer}>
+                <section className={styles.mainOverlay} />
+                <section className={styles.overlayImgContainer}>
+                    <img src={womanHomeImg} alt="HomePage background" className={styles.mainOverlayImg} />
+                </section>
+            </section>
+            <ScrollingBanner />
         </main>
     );
 }

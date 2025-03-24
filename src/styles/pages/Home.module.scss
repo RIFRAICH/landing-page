@@ -1,0 +1,20 @@
+@import '../mixins';
+
+.aboutContainer {
+  margin-top: 210px;
+}
+
+.aboutCards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  @include for-small-desktop-only {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.commitmentContainer {
+  margin-top: 243px;
+}

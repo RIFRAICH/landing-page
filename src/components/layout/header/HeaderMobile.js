@@ -51,10 +51,6 @@ const HeaderMobile = () => {
                         <p className={styles.navLinkText}>Nos engagements</p>
                         <ArrowRightMinimizedIcon />
                     </section>
-                    <section onClick={() => handleLinkClick("commitment")} className={styles.navLinkContainer}>
-                        <p className={styles.navLinkText}>Nos engagements</p>
-                        <ArrowRightMinimizedIcon />
-                    </section>
                     <section onClick={() => handleLinkClick("contact")} className={styles.navLinkContainer}>
                         <RoundedButton text="Contactez-nous" buttonColor="#b8beff" textColor="#262D6A" />
                     </section>
