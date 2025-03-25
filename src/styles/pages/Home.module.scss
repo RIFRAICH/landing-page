@@ -124,6 +124,9 @@
   margin-top: 36px;
   width: 70%;
   margin-bottom: 242px;
+  @include for-tablet-only {
+    width: 80%;
+  }
 }
 
 .contactSection {
