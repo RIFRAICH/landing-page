@@ -21,4 +21,119 @@
 
 .commitmentCards {
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.ctaShopContainer {
+  margin-top: 160px;
+  background-color: #BDC2FF;
+  padding-top: 106px;
+  padding-bottom: 106px;
+  padding-left: 64px;
+  padding-right: 64px;
+  margin-left: 7%;
+  margin-right: 7%;
+  @include for-tablet-only {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.ctaShopTitle {
+  color: #262D6A;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: -0.36px;
+  max-width: 60%;
+  @include for-tablet-only {
+    max-width: 100%;
+    font-size: 28px;
+  }
+}
+
+.ctaShopContent {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  @include for-tablet-only {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+.ctaShopDescription {
+  color: #262D6A;
+  font-family: 'Jost', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.28px;
+  @include for-tablet-only {
+    font-size: 24px;
+  }
+}
+
+.ctaShopButtons {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  @include for-phone-only {
+    gap: 24px;
+  }
+}
+
+.ctaShopGoButton {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+.ctaShopSeeMoreButton {
+  padding-right: 24px;
+  padding-left: 24px;
+  border: 1px solid #262D6A;
+}
+
+.contactContainer {
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactTitle {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.contactForm {
+  margin-top: 36px;
+  width: 70%;
+  margin-bottom: 242px;
+}
+
+.contactSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.contactInput {
+  width: 100%;
+}
+
+.contactButton {
+  width: 100%;
 }

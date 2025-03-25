@@ -1,39 +1,137 @@
+@import '../mixins';
+
 .container {
   background-color: #1F2BA6;
-  max-width: 65%;
+  max-width: 50%;
   position: relative;
   overflow: visible;
+  @include for-phone-only {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 4px;
+  }
+}
+
+.containerReverse {
+  margin-left: auto;
+  padding-right: 7%;
+  @include for-phone-only {
+    margin-left: 7%;
+    padding-left: 7%;
+  }
+}
+
+.containerNoReverse {
+  padding-left: 7%;
+  @include for-phone-only {
+    padding-right: 7%;
+  }
 }
 
 .textContainer {
   padding-top: 80px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
+  @include for-small-desktop-only {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  @include for-phone-only {
+    padding-bottom: 0%;
+  }
+}
+
+.textContainerReverse {
+  padding-left: 45%;
+  @include for-tablet-only {
+    padding-left: 33%;
+  }
+  @include for-phone-only {
+    padding-left: 0%;
+  }
+}
+
+.textContainerNoReverse {
+  padding-right: 45%;
+  @include for-tablet-only {
+    padding-right: 33%;
+  }
+  @include for-phone-only {
+    padding-right: 0%;
+  }
 }
 
 .title {
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 160%;
   letter-spacing: -0.36px;
+  @include for-tablet-only {
+    font-size: 24px;
+  }
 }
 
 .description {
   margin-top: 24px;
   color: #FFFFFF;
   font-family: 'Jost', sans-serif;
-  font-size: 28px;
+  font-size: 20px;
   font-style: italic;
   font-weight: 400;
   line-height: 160%;
   letter-spacing: -0.28px;
+  @include for-tablet-only {
+    font-size: 16px;
+  }
+}
+
+.textRight {
+  text-align: right;
+  @include for-phone-only {
+    text-align: left;
+  }
 }
 
 .image {
   position: absolute;
   bottom: 0px;
-  right: -25%;
   height: auto;
   max-height: 100%;
+  @include for-phone-only {
+    position: relative;
+    left: 0px;
+    width: 80%;
+    object-fit: cover;
+  }
+}
+
+.imageNoReverse {
+  right: -17%;
+  @include for-small-desktop-only {
+    right: -25%;
+  }
+  @include for-tablet-only {
+    right: -27%;
+  }
+  @include for-phone-only {
+    right: 0px;
+  }
+}
+
+.imageReverse {
+  left: -20%;
+  @include for-small-desktop-only {
+    left: -25%;
+  }
+  @include for-tablet-only {
+    left: -35%;
+  }
+  @include for-phone-only {
+    left: 0px;
+  }
 }

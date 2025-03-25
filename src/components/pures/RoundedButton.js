@@ -4,6 +4,7 @@ const RoundedButton = ({
     text,
     buttonColor,
     textColor,
+    icon = null,
     action = () => {},
     type = "button",
     disabled = false,
@@ -17,6 +18,7 @@ const RoundedButton = ({
         disabled={disabled}
     >
         {text}
+        {icon && icon}
     </button>
 );
 
