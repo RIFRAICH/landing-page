@@ -94,7 +94,7 @@ function HomePage(){
                         <InputLabel className={styles.contactInput} id="phone" type="tel" placeholder="Téléphone" />
                     </section>
                     <section className={styles.contactSection}>
-                        <InputLabel className={styles.contactInput} id="subject" type="text" placeholder="Précisez l'objet de votre message" required />
+                        <InputLabel className={styles.contactInput} id="subject" type="text" placeholder="Objet" required />
                     </section>
                     <section className={styles.contactSection}>
                         <InputLabel className={styles.contactInput} id="message" type="text" placeholder="Votre message" textarea required />

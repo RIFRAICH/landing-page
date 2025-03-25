@@ -1,10 +1,11 @@
 <?php
-if(!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['subject']) || !isset($_POST['message'])){
+if(!isset($_POST['lastname']) ||!isset($_POST['firstname']) || !isset($_POST['email']) || !isset($_POST['subject']) || !isset($_POST['message'])){
     echo 'false';
     return;
 }
 
-$name = strip_tags($_POST['name']);
+$lastname = strip_tags($_POST['lastname']);
+$firstname = strip_tags($_POST['firstname']);
 $email = strip_tags($_POST['email']);
 $subject = strip_tags($_POST['subject']);
 $phone = isset($_POST['phone']) ? strip_tags($_POST['phone']) : '-';
@@ -14,5 +15,5 @@ $headers = 'From: RIFRAICH <noreply@rifraich.fr>' . "\r\n" .
            'Reply-To: '. $email . "\r\n" .
            'X-Mailer: PHP/' . phpversion();
 
-mail("contact@rifraich.fr", "Message via landing page : ". $subject, "Nom : ". $name ."\r\nEmail : ". $email ."\r\nTelephone : ". $phone ."\r\nObjet : ". $subject ."\r\n \r\n". $message, $headers);
+mail("contact@rifraich.fr", "Message via landing page : ". $subject, "Nom : ". $firstname ." ". $lastname ."\r\nEmail : ". $email ."\r\nTelephone : ". $phone ."\r\nObjet : ". $subject ."\r\n \r\n". $message, $headers);
 echo 'true';
