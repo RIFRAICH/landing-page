@@ -15,8 +15,6 @@
   .label {
     position: absolute;
     left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 16px;
     color: #606060;
     font-family: 'Jost', sans-serif;
@@ -27,10 +25,17 @@
     padding: 0 5px;
     transition: all 0.2s ease-in-out;
     pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.textarea:not(.active):not(.focused) .label {
+    top: 25px;
   }
 
   &.active .label {
-    top: 0px;
+    top: 0;
+    transform: translateY(-10);
     font-size: 12px;
     line-height: 16px;
     z-index: 1;
@@ -59,6 +64,7 @@
 
   &.textarea {
     resize: vertical;
+    min-height: 300px;
   }
 }
 

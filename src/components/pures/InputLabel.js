@@ -21,8 +21,14 @@ const InputLabel = ({
 
     return (
         <section className={className}>
-            <section className={`${styles.container} ${hasText || isFocused ? styles.active : ""} ${isFocused ? styles.focused : ""}`}>
-                <label className={`${styles.label} ${textarea ? styles.labelTextarea : ""}`}>
+            <section
+                className={`
+                    ${styles.container}
+                    ${hasText || isFocused ? styles.active : ""}
+                    ${isFocused ? styles.focused : ""}
+                    ${textarea ? styles.textarea : ""}
+                  `}>
+            <label className={`${styles.label} ${textarea ? styles.labelTextarea : ""}`}>
                     {placeholder}
                 </label>
                 {textarea ? (

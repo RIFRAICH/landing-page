@@ -15,6 +15,26 @@ import InputLabel from "../components/pures/InputLabel";
 function HomePage(){
     const isTablet = useIsTablet();
 
+    const handleContactForm = (event) => {
+        event.preventDefault();
+        const lastname = document.getElementById('lastname').value;
+        const firstname = document.getElementById('firstname').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        // Send the form data to the server
+
+
+        // Reset the form
+        document.getElementById('lastname').value = '';
+        document.getElementById('firstname').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('phone').value = '';
+        document.getElementById('subject').value = '';
+        document.getElementById('message').value = '';
+    }
+
     return (
         <>
             {isTablet ? <MainMobile /> : <MainDesktop />}
@@ -46,7 +66,7 @@ function HomePage(){
             </section>
             <section id="contact" className={styles.contactContainer}>
                 <h2 className={styles.contactTitle}>Nous contacter</h2>
-                <form className={styles.contactForm}>
+                <form className={styles.contactForm} onSubmit={handleContactForm}>
                     <section className={styles.contactSection}>
                         <InputLabel className={styles.contactInput} id="lastname" type="text" placeholder="Nom" required />
                         <InputLabel className={styles.contactInput} id="firstname" type="text" placeholder="Prénom" required />
@@ -61,7 +81,7 @@ function HomePage(){
                     <section className={styles.contactSection}>
                         <InputLabel className={styles.contactInput} id="message" type="text" placeholder="Votre message" textarea required />
                     </section>
-                    <RoundedButton className={styles.contactButton} buttonColor="#1F2BA6" textColor="#FFF" text="Envoyer" />
+                    <RoundedButton className={styles.contactButton} buttonColor="#1F2BA6" textColor="#FFF" text="Envoyer" type="submit" />
                 </form>
             </section>
         </>

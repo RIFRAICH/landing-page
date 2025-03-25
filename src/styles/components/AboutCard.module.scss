@@ -6,6 +6,10 @@
   border-radius: 4px;
   width: 352px;
   height: 288px;
+  @include for-tablet-only {
+    width: auto;
+    height: auto;
+  }
 }
 
 .title {
@@ -20,6 +24,9 @@
   @include for-tablet-only {
     font-size: 24px;
   }
+  @include for-phone-only {
+    font-size: 20px;
+  }
 }
 
 .description {
@@ -33,5 +40,8 @@
   letter-spacing: -0.2px;
   @include for-tablet-only {
     font-size: 18px;
+  }
+  @include for-phone-only {
+    font-size: 16px;
   }
 }
