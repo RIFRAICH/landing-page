@@ -7,10 +7,10 @@
   width: 105vw;
   z-index: 2;
   @include for-tablet-only {
-    bottom: 10%;
+    bottom: -25%;
   }
   @include for-phone-only {
-    bottom: 0%;
+    bottom: -35%;
   }
 }
 

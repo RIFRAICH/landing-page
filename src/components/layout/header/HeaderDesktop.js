@@ -13,8 +13,8 @@ const HeaderDesktop = () => {
             <Link className={styles.link} onClick={() => handleLinkClick("about")}>A propos de nous</Link>
             <Link className={styles.link} onClick={() => handleLinkClick("commitment")}>Nos engagements</Link>
             <img src={rifraichLogoImg} alt="Rifraich Logo" />
-            <Link className={styles.link} onClick={() => handleLinkClick("contact")}>Pourquoi nous choisir</Link>
-            <RoundedButton text="Contactez-nous" buttonColor="#b8beff" textColor="#262D6A" />
+            <Link className={styles.link} onClick={() => handleLinkClick("commitment")}>Pourquoi nous choisir</Link>
+            <RoundedButton text="Contactez-nous" buttonColor="#b8beff" textColor="#262D6A" action={() => handleLinkClick("contact")} />
         </header>
     )
 }

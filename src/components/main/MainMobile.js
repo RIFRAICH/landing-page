@@ -4,6 +4,10 @@ import womanHomeImg from "../../assets/img/womanHome.png";
 import ScrollingBanner from "../pures/ScollingBanner";
 
 const MainMobile = () => {
+    const handleButtonClick = (sectionId) => {
+        window.location.href = `#${sectionId}`;
+    }
+
     return (
         <main className={styles.main}>
             <section className={styles.mainContent}>
@@ -15,6 +19,7 @@ const MainMobile = () => {
                         buttonColor="#1F2BA6"
                         textColor="#FFF"
                         text="Commencer maintenant"
+                        action={() => handleButtonClick('about')}
                     />
                 </section>
             </section>

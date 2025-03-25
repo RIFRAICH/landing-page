@@ -11,28 +11,46 @@ import womanStrawberryImg from "../assets/img/womanStrawberry.png";
 import manWomanJacketJeansImg from "../assets/img/manWomanJacketJeans.png";
 import RoundedButton from "../components/pures/RoundedButton";
 import InputLabel from "../components/pures/InputLabel";
+import {showToast} from "../utils/Toast";
 
 function HomePage(){
     const isTablet = useIsTablet();
 
-    const handleContactForm = (event) => {
+    const handleContactForm = async (event) => {
         event.preventDefault();
-        const lastname = document.getElementById('lastname').value;
-        const firstname = document.getElementById('firstname').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
-        // Send the form data to the server
+        const formData = {
+            lastname: document.getElementById('lastname').value,
+            firstname: document.getElementById('firstname').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+        };
 
+        try {
+            const response = await fetch('mail.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(formData).toString()
+            });
 
-        // Reset the form
-        document.getElementById('lastname').value = '';
-        document.getElementById('firstname').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('phone').value = '';
-        document.getElementById('subject').value = '';
-        document.getElementById('message').value = '';
+            if (response.ok) {
+                showToast("Votre message a été envoyé !");
+
+                document.getElementById('lastname').value = '';
+                document.getElementById('firstname').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('phone').value = '';
+                document.getElementById('subject').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                showToast("Une erreur est survenue", 'error');
+            }
+        } catch (error) {
+            showToast("Une erreur est survenue", 'error');
+        }
     }
 
     return (
