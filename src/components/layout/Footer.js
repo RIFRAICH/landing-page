@@ -14,6 +14,9 @@ import {
 import {registerToNewsletter} from "../../services/publicService";
 
 const Footer = () => {
+    const handleLinkClick = (nav) => {
+        window.location.href = `${nav}`;
+    }
 
     const handleRegisterNewsletter = (event) => {
         event.preventDefault();
@@ -51,20 +54,17 @@ const Footer = () => {
                 <section>
                     <h2 className={styles.footerSectionTitle}>A propos de nous</h2>
                     <section className={styles.footerSectionLinks}>
-                        <Link className={styles.footerLink} to="#">Notre mission</Link>
-                        <Link className={styles.footerLink} to="#">Durabilité</Link>
+                        <Link className={styles.footerLink} onClick={() => handleLinkClick("#about")}>Notre mission</Link>
+                        <Link className={styles.footerLink} onClick={() => handleLinkClick("#commitment")}>Engagements</Link>
                         <Link className={styles.footerLink} to={BLOG_URL} target="_blank">Le Blog RIFRAICH</Link>
                     </section>
                 </section>
                 <section>
                     <h2 className={styles.footerSectionTitle}>Besoin d'aide ?</h2>
                     <section className={styles.footerSectionLinks}>
-                        <Link className={styles.footerLink} to="#">Devenir vendeur</Link>
-                        <Link className={styles.footerLink} to="#">Acheter</Link>
-                        <Link className={styles.footerLink} to="#">Retours</Link>
                         <Link className={styles.footerLink} to={STATUS_URL} target="_blank">État des services</Link>
-                        <Link className={styles.footerLink} to="#">Conditions générales de vente (CGV)</Link>
-                        <Link className={styles.footerLink} to="#">Nous contacter</Link>
+                        <Link className={styles.footerLink} onClick={() => handleLinkClick("mentions-legales")}>Mentions légales</Link>
+                        <Link className={styles.footerLink} onClick={() => handleLinkClick("#contact")}>Nous contacter</Link>
                     </section>
                 </section>
             </section>

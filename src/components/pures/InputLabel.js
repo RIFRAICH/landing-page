@@ -33,7 +33,7 @@ const InputLabel = ({
                 </label>
                 {textarea ? (
                     <textarea
-                        className={styles.input}
+                        className={`${styles.input} ${styles.textarea}`}
                         onFocus={handleFocus}
                         onBlur={handleBlur}
                         required={required}
