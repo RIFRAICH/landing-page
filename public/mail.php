@@ -19,7 +19,7 @@ $headers .= "X-Mailer: PHP/" . phpversion();
 
 $subject_encoded = mb_encode_mimeheader("Message via landing page : " . $subject, "UTF-8", "B");
 
-mail("contact@rifraich.fr", $subject_encoded, "Nom : " . $lastname . "\r\nPrénom : " . $firstname . "\r\nEmail : " . $email . "\r\nTelephone : " . $phone . "\r\nObjet : " . $subject . "\r\n\r\n" . $message, $headers);
+mail("contact@rifraich.fr", $subject_encoded, "Nom : " . $lastname . "\r\nPrénom : " . $firstname . "\r\nEmail : " . $email . "\r\nTéléphone : " . $phone . "\r\nObjet : " . $subject . "\r\n\r\n" . $message, $headers);
 
 echo 'true';
 ?>
