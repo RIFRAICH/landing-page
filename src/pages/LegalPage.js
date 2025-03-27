@@ -8,7 +8,6 @@ const LegalPage = () => {
                 <h2 className={styles.mainSubtitle}>Éditeur du site</h2>
                 <p>RIFRAICH</p>
                 <p>Adresse : 12 rue Georges Mandel, 49000 Angers, France</p>
-                <a className={styles.mainLink} href="mailto:contact@rifraich.fr">contact@rifraich.fr</a>
                 <p>Directeur de la publication : RIFRAICH</p>
             </section>
             <section className={styles.mainSection}>
@@ -34,7 +33,7 @@ const LegalPage = () => {
                     <li>Cookies : utilisés pour analyser et améliorer les performances du site.</li>
                 </ul>
                 <p>Le responsable du traitement des données est RIFRAICH.</p>
-                <p>Vous disposez de droits concernant vos données personnelles, notamment le droit d’accès, de rectification, d’opposition et de suppression. Pour exercer ces droits, veuillez nous contacter à l’adresse suivante : <a className={styles.mainLink} href="mailto:contact@rifraich.fr">contact@rifraich.fr</a>.</p>
+                <p>Vous disposez de droits concernant vos données personnelles, notamment le droit d’accès, de rectification, d’opposition et de suppression. Pour exercer ces droits, veuillez nous contacter via le formulaire de contact.</p>
             </section>
             <section className={styles.mainSection}>
                 <h2 className={styles.mainSubtitle}>Responsabilité</h2>
