@@ -1,7 +1,7 @@
-@import '../mixins';
+@import "../mixins";
 
 .container {
-  background-color: #1F2BA6;
+  background-color: #1f2ba6;
   max-width: 50%;
   position: relative;
   overflow: visible;
@@ -65,8 +65,8 @@
 }
 
 .title {
-  color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 160%;
@@ -78,8 +78,8 @@
 
 .description {
   margin-top: 24px;
-  color: #FFFFFF;
-  font-family: 'Jost', sans-serif;
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
